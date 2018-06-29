@@ -1,0 +1,35 @@
+// Themes
+
+@mixin button-default-color {
+  &:link,
+  &:visited {
+    background-color: $gray;
+    color: $black;
+  }
+  &:hover,
+  &:active {
+    background-color: $black;
+    color: $gray;
+  }
+}
+
+@mixin link-default-color {
+  &:link,
+  &:visited {
+    color: $black;
+  }
+  &:hover,
+  &:active {
+    color: $gray;
+  }
+}
+
+// Classes
+
+.button-default-color {
+  @include button-default-color;
+}
+
+.link-default-color {
+  @include link-default-color;
+}

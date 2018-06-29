@@ -1,0 +1,34 @@
+// Palette
+
+$tap:     rgba(000, 000, 000, 0);
+$white:   rgba(255, 255, 255, 1);
+$black:   rgba(000, 000, 000, 1);
+$yellow:  rgba(255, 255, 000, 1);
+
+
+// Gray
+$gray-lightest: #efeff1;
+$gray-lighter:  #cfd0d6;
+$gray-light:    #b0b2ba;
+$gray:          #90939f;
+$gray-dark:     #717583;
+$gray-darker:   #565963;
+$gray-darkest:  #3b3c44;
+
+// Color
+.gray-lightest-cl { color: $gray-lightest; }
+.gray-lighter-cl  { color: $gray-lighter; }
+.gray-light-cl    { color: $gray-light; }
+.gray-cl          { color: $gray; }
+.gray-dark-cl     { color: $gray-dark; }
+.gray-darker-cl   { color: $gray-darker; }
+.gray-darkest-cl  { color: $gray-darkest; }
+
+// Backgrounds
+.gray-lightest-bg { background-color: $gray-lightest; }
+.gray-lighter-bg  { background-color: $gray-lighter; }
+.gray-light-bg    { background-color: $gray-light; }
+.gray-bg          { background-color: $gray; }
+.gray-dark-bg     { background-color: $gray-dark; }
+.gray-darker-bg   { background-color: $gray-darker; }
+.gray-darkest-bg  { background-color: $gray-darkest; }

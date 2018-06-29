@@ -1,0 +1,41 @@
+// Alignments
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center-h-parent {
+  float: left;
+  position: relative;
+  right: -50%;
+}
+
+.center-h-child {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  right: 50%;
+}
+
+.center-v-parent {
+  display: table;
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.center-v-child {
+  display: table-cell;
+  float: left;
+  height: auto;
+  vertical-align: middle;
+}

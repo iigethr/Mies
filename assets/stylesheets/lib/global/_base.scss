@@ -1,0 +1,17 @@
+// Base
+
+* {
+  @include border-box;
+}
+
+html,
+body {
+  @include border-box;
+  @include clearfix;
+  font-family: $sans;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
