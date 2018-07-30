@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.files       = Dir["{assets,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   # Production
-  spec.add_dependency "autoprefixer-rails", "~> 8.0"
+  spec.add_dependency "autoprefixer-rails", "~> 9.0"
   spec.add_dependency "inline_svg", "~> 1.0"
   spec.add_dependency "rails", "~> 5.2"
   spec.add_dependency "sass-rails", "~> 5.0"

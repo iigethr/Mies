@@ -2,11 +2,11 @@ AllCops:
   TargetRubyVersion: 2.5
 
   Exclude:
-    - "db/**/*"
-    - "bin/**/*"
-    - "spec/**/*"
-    - "test/**/*"
-    - "vendor/**/*"
+    - db/**/*
+    - bin/**/*
+    - spec/**/*
+    - test/**/*
+    - vendor/**/*
 
 ## Base
 Rails:
@@ -19,6 +19,10 @@ Documentation:
 Metrics/AbcSize:
   Max: 32
 
+Metrics/BlockLength:
+  Max: 64
+  CountComments: false
+
 Metrics/LineLength:
   Max: 160
 
@@ -26,10 +30,6 @@ Metrics/MethodLength:
   Max: 32
 
 Metrics/ModuleLength:
-  Max: 64
-  CountComments: false
-
-Metrics/BlockLength:
   Max: 64
   CountComments: false
 
