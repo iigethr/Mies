@@ -8,7 +8,7 @@ module Mies
       Rails.application.config.assets.paths << root.join("assets", "icons")
       Rails.application.config.assets.paths << root.join("assets", "images")
       Rails.application.config.assets.paths << root.join("assets", "stylesheets")
-      Rails.application.config.assets.precompile << /\.(?:gif|png|jpg|jpeg|svg|eot|woff|ttf)$/
+      Rails.application.config.assets.precompile += %w[*.gif *.png *.jpg *.jpeg *.pdf *.svg *.eot *.woff *.ttf]
     end
   end
 end

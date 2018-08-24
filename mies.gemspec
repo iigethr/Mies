@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.authors     = "Team IIGETHR"
   spec.email       = "talktous@iigethr.com"
   spec.homepage    = "https://www.iigethr.com"
-  spec.summary     = "A Minimal and Lightweight SCSS Toolset."
+  spec.summary     = "A Minimal and Lightweight Design System."
   spec.license     = "MIT"
   spec.files       = Dir["{assets,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 

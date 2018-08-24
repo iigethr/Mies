@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/9a834070d31596442fe3/maintainability)](https://codeclimate.com/github/iigethr/mies/maintainability)
+
 # Mies
 
 A Minimal and Lightweight SCSS Toolset.
@@ -7,6 +9,7 @@ A Minimal and Lightweight SCSS Toolset.
 Add this line to your application.css
 
 ```
+*= require normalize
 *= require mies
 ```
 
