@@ -73,7 +73,7 @@ p {
   }
   a {
     @include hover-animation(.20s);
-    @include link-default-color;
+    @include link-default-theme;
     display: inline-block;
     font-size: inherit;
     line-height: inherit;

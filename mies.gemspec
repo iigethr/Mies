@@ -9,7 +9,7 @@ require "mies/version"
 Gem::Specification.new do |spec|
   spec.name        = "mies"
   spec.version     = Mies::VERSION
-  spec.authors     = "Team at IIGETHR"
+  spec.authors     = "Team IIGETHR"
   spec.email       = "talktous@iigethr.com"
   spec.homepage    = "https://www.iigethr.com"
   spec.summary     = "A Minimal and Lightweight SCSS Toolset."

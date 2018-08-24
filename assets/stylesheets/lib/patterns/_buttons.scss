@@ -1,51 +1,59 @@
 // Buttons
 
 .button {
-  @include border-corner(0);
-  @include button-default-color;
-  @include clearfix-left;
-  @include hover-animation(.20s);
+  @include button-default-theme;
+  @include button-small-size;
   appearance: none;
-  border: 0;
-  cursor: pointer;
-  display: block;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  vertical-align: baseline;
   white-space: nowrap;
   width: auto;
   .icon {
-    @include hover-animation(.20s);
-    display: block;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    img,
-    svg {
-      height: inherit;
-      vertical-align: baseline;
-    }
+    background-color: $black;
   }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Sizes
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   &.nano {
-    @include bl-nano-size;
+    @include button-nano-size;
   }
   &.tiny {
-    @include bl-tiny-size;
+    @include button-tiny-size;
   }
   &.small {
-    @include bl-small-size;
+    @include button-small-size;
   }
   &.medium {
-    @include bl-medium-size;
+    @include button-medium-size;
   }
   &.large {
-    @include bl-large-size;
+    @include button-large-size;
   }
   &.extra-large {
-    @include bl-extra-large-size;
+    @include button-extra-large-size;
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Themes
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  &.gray {
+    @include button-gray-theme;
+  }
+  &.blue {
+    @include button-blue-theme;
+  }
+  &.green {
+    @include button-green-theme;
+  }
+  &.yellow {
+    @include button-yellow-theme;
+  }
+  &.orange {
+    @include button-orange-theme;
+  }
+  &.red {
+    @include button-red-theme;
+  }
+  &.purple {
+    @include button-purple-theme;
   }
 }

@@ -1,43 +1,54 @@
 // Links
 
 .link {
-  @include clearfix-left;
-  @include hover-animation(.20s);
-  @include link-default-color;
-  display: block;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
+  @include link-default-theme;
+  @include link-small-size;
   .icon {
-    @include hover-animation(.20s);
-    display: block;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    img,
-    svg {
-      height: inherit;
-      vertical-align: baseline;
-    }
+    background-color: $black;
   }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Sizes
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   &.nano {
-    @include bl-nano-size;
+    @include link-nano-size;
   }
   &.tiny {
-    @include bl-tiny-size;
+    @include link-tiny-size;
   }
   &.small {
-    @include bl-small-size;
+    @include link-small-size;
   }
   &.medium {
-    @include bl-medium-size;
+    @include link-medium-size;
   }
   &.large {
-    @include bl-large-size;
+    @include link-large-size;
   }
   &.extra-large {
-    @include bl-extra-large-size;
+    @include link-extra-large-size;
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Themes
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  &.gray {
+    @include link-gray-theme;
+  }
+  &.blue {
+    @include link-blue-theme;
+  }
+  &.green {
+    @include link-green-theme;
+  }
+  &.yellow {
+    @include link-yellow-theme;
+  }
+  &.orange {
+    @include link-orange-theme;
+  }
+  &.red {
+    @include link-red-theme;
+  }
+  &.purple {
+    @include link-purple-theme;
   }
 }

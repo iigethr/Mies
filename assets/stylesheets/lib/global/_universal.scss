@@ -7,20 +7,23 @@ $class: "universal";
   @include clearfix;
   float: left;
   margin: 0 auto;
-  min-width: 960px;
+  min-width: 1260px;
+  overflow: hidden;
   padding: 0;
   width: 100%;
   .#{$class}-box {
     @include border-box;
     @include clearfix;
     margin: 0 auto;
+    overflow: hidden;
     padding: 0;
-    width: 960px;
+    width: 1260px;
     .#{$class}-item {
       @include border-box;
       @include clearfix;
       float: left;
       margin: 0 auto;
+      overflow: hidden;
       padding: 0;
       width: 100%;
     }
