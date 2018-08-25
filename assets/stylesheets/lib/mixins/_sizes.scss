@@ -5,16 +5,16 @@
 @mixin button-nano-size {
   @include border-corner(2px);
   font-size: 10px;
-  line-height: 28px;
-  padding: 0 7px;
+  line-height: 24px;
+  padding: 0 6px;
   .icon {
-    height: 14px;
-    margin: 7px 0 0;
+    height: 12px;
+    margin: 6px 0 0;
     &.left {
-      margin-right: 5px;
+      margin-right: 4px;
     }
     &.right {
-      margin-left: 5px;
+      margin-left: 4px;
     }
   }
 }
