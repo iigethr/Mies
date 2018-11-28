@@ -41,6 +41,17 @@ h6 {
   line-height: 18px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &.lighter {
+    font-weight: lighter;
+  }
+}
+
 p {
   font-size: 18px;
   line-height: 24px;
@@ -70,6 +81,10 @@ p {
   &.extra-large {
     font-size: 32px;
     line-height: 40px;
+  }
+  &.strong {
+    font-weight: bold;
+    letter-spacing: .05em;
   }
   a {
     @include hover-animation(.20s);

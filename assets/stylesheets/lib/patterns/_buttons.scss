@@ -6,12 +6,8 @@
   appearance: none;
   text-align: left;
   text-decoration: none;
-  user-select: none;
   white-space: nowrap;
   width: auto;
-  .icon {
-    background-color: $black;
-  }
   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   // Sizes
   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -56,5 +52,11 @@
   }
   &.purple {
     @include button-purple-theme;
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Inner elements
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  .icon {
+    background-color: $black;
   }
 }

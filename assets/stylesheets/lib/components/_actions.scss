@@ -1,0 +1,78 @@
+// Actions
+
+$class: "actions";
+
+.#{$class} {
+  float: right;
+  .#{$class}-box {
+    @include clear-list;
+    float: left;
+    .#{$class}-item {
+      float: left;
+      padding: 0 0 0 4px;
+      &:first-child {
+        padding: 0;
+      }
+      .button {
+        @include button-blue-theme;
+        @include button-tiny-size;
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$nano} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$extra-large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

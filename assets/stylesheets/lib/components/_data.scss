@@ -1,0 +1,102 @@
+// Data
+
+$class: "data";
+
+.#{$class} {
+  float: left;
+  width: 100%;
+  .#{$class}-box {
+    float: left;
+    width: 100%;
+    .#{$class}-header {
+      background-color: $blue-000;
+      border: 1px solid $blue-200;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      float: left;
+      padding: 8px;
+      width: 100%;
+    }
+    .#{$class}-item {
+      border-bottom: 1px solid $gray-200;
+      border-left: 1px solid $gray-200;
+      border-right: 1px solid $gray-200;
+      float: left;
+      padding: 8px;
+      width: 100%;
+      .link {
+        @include link-blue-theme;
+      }
+    }
+    .#{$class}-left,
+    .#{$class}-middle,
+    .#{$class}-right {
+      min-height: 28px;
+      padding: 4px;
+    }
+    .#{$class}-left {
+      float: left;
+      width: 60%;
+    }
+    .#{$class}-right {
+      float: right;
+      width: 40%;
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$nano} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$extra-large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

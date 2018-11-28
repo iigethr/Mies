@@ -1,5 +1,11 @@
 // Column Setup
 
+// How to read system:
+// [class]-[5]-[3]
+// The column represented by [class] is divided into [5] columns
+// Out of those columns I want the spec that occupies [3] meaning
+// that are another two which could be represented by 2 x [class]-[5]-[1]
+// or 1 x [class]-[5]-[2]
 .#{$class}-1-1,
 .#{$class}-2-1,
 .#{$class}-2-2,

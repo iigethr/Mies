@@ -1,0 +1,85 @@
+// Breadcrumbs
+
+$class: "breadcrumbs";
+
+.#{$class} {
+  float: left;
+  .#{$class}-box {
+    @include clear-list;
+    float: left;
+    .#{$class}-item {
+      float: left;
+      padding: 0 4px 0 0;
+      width: 100%;
+      &:last-child {
+        padding: 0;
+      }
+      .link {
+        @include link-blue-theme;
+        @include link-nano-size;
+        line-height: 32px;
+        text-decoration: none;
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$nano} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$extra-large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

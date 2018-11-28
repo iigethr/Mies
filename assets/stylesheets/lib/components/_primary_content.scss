@@ -1,0 +1,116 @@
+// Primary content
+
+$class: "primary-content";
+
+.#{$class} {
+  float: left;
+  padding: 32px;
+  width: 840px;
+  .#{$class}-sub {
+    float: left;
+    width: 100%;
+    .#{$class}-item {
+      float: left;
+      min-height: 48px;
+      padding: 8px;
+      width: 100%;
+    }
+  }
+  .#{$class}-header {
+    float: left;
+    width: 100%;
+    .#{$class}-item {
+      float: left;
+      padding: 8px;
+      width: 100%;
+    }
+  }
+  .#{$class}-box {
+    float: left;
+    width: 100%;
+    .#{$class}-wrapper {
+      @include border-corner(4px);
+      background-color: $gray-100;
+      border: 1px solid $gray-300;
+      float: left;
+      padding: 32px;
+      width: 100%;
+      p {
+        padding: 0 0 8px;
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+    .#{$class}-item {
+      float: left;
+      padding: 8px;
+      width: 100%;
+    }
+  }
+  .#{$class}-footer {
+    float: left;
+    width: 100%;
+    .#{$class}-item {
+      float: left;
+      padding: 8px;
+      width: 100%;
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$nano} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$extra-large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
