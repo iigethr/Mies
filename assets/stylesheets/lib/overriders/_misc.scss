@@ -1,6 +1,10 @@
-// Misc
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Misc
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
-// Remove tap highlight
+// Remove Tap Highlight
+// -------------------------------------------------------------
 .button,
 .link,
 input,
@@ -8,5 +12,46 @@ textarea,
 button,
 select,
 a {
-  -webkit-tap-highlight-color: $tap;
+  -webkit-tap-highlight-color: $tap !important;
+}
+
+// Floats
+// -------------------------------------------------------------
+.left  { float: left !important; }
+.right { float: right !important; }
+
+// Displays
+// -------------------------------------------------------------
+.inline         { display: inline !important; }
+.inline-block   { display: inline-block !important; }
+
+// Wrappers
+// -------------------------------------------------------------
+.wide { width: 100% !important; }
+
+.wrap-left,
+.wrap-right {
+  vertical-align: baseline !important;
+  width: auto !important;
+}
+
+.wrap-left { float: left !important; }
+.wrap-right { float: right !important; }
+
+// Separators
+// -------------------------------------------------------------
+.separator {
+  appearance: none !important;
+  border: 0 !important;
+  float: left !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  &.nano { margin: 4px 0 !important; }
+  &.tiny { margin: 8px 0 !important; }
+  &.small { margin: 16px 0 !important; }
+  &.medium { margin: 32px 0 !important; }
+  &.large { margin: 48px 0 !important; }
+  &.extra-large { margin: 64px 0 !important; }
 }

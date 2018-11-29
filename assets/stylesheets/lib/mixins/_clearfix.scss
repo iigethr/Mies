@@ -1,4 +1,7 @@
-// Clearfix
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Clearfix
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
 @mixin clearfix {
   &::before {
@@ -23,15 +26,7 @@
 }
 
 // Classes
-
-.clearfix {
-  @include clearfix;
-}
-
-.clearfix-left {
-  @include clearfix-left;
-}
-
-.clearfix-right {
-  @include clearfix-right;
-}
+// -------------------------------------------------------------
+.clearfix { @include clearfix; }
+.clearfix-left { @include clearfix-left; }
+.clearfix-right { @include clearfix-right; }

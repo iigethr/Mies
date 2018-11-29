@@ -1,4 +1,7 @@
-// Borders
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Borders
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
 @mixin border-box {
   box-sizing: border-box;
@@ -12,16 +15,8 @@
   border-radius: $radius;
 }
 
-//  Classes
-
-.border-box {
-  @include border-box;
-}
-
-.border-corner {
-  @include border-corner(0);
-}
-
-.border-top-corner {
-  @include border-top-corner(0);
-}
+// Classes
+// -------------------------------------------------------------
+.border-box { @include border-box; }
+.border-corner { @include border-corner(0); }
+.border-top-corner { @include border-top-corner(0); }

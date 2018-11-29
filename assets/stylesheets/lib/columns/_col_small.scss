@@ -1,4 +1,7 @@
-// Column small
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Small
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
 $width: 480px;
 $class: "col-small";
@@ -6,33 +9,43 @@ $class: "col-small";
 @import "lib/columns/col_setup";
 @import "lib/columns/col_math";
 
-// Media Queries
-
+// Media Query 240px
+// -------------------------------------------------------------
 @media #{$nano} {
   $width: 240px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 360px
+// -------------------------------------------------------------
 @media #{$tiny} {
   $width: 360px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 480px
+// -------------------------------------------------------------
 @media #{$small} {
   $width: 480px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 720px
+// -------------------------------------------------------------
 @media #{$medium} {
   $width: 480px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 960px
+// -------------------------------------------------------------
 @media #{$large} {
   $width: 480px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 1260px
+// -------------------------------------------------------------
 @media all and #{$extra-large} {
   $width: 480px;
   @import "lib/columns/col_math";

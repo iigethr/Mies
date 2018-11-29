@@ -1,3 +1,5 @@
+# Rubocop [https://github.com/rubocop-hq/rubocop]
+
 AllCops:
   TargetRubyVersion: 2.5
 
@@ -34,11 +36,14 @@ Metrics/ModuleLength:
   CountComments: false
 
 ## Style
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 Style/SymbolArray:
   EnforcedStyle: brackets
-
-Style/EmptyMethod:
-  EnforcedStyle: expanded

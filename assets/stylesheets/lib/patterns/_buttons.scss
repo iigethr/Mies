@@ -1,4 +1,7 @@
-// Buttons
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Buttons
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
 .button {
   @include button-default-theme;
@@ -8,55 +11,23 @@
   text-decoration: none;
   white-space: nowrap;
   width: auto;
-  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   // Sizes
-  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  &.nano {
-    @include button-nano-size;
-  }
-  &.tiny {
-    @include button-tiny-size;
-  }
-  &.small {
-    @include button-small-size;
-  }
-  &.medium {
-    @include button-medium-size;
-  }
-  &.large {
-    @include button-large-size;
-  }
-  &.extra-large {
-    @include button-extra-large-size;
-  }
-  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  &.nano { @include button-nano-size; }
+  &.tiny { @include button-tiny-size; }
+  &.small { @include button-small-size; }
+  &.medium { @include button-medium-size; }
+  &.large { @include button-large-size; }
+  &.extra-large { @include button-extra-large-size; }
   // Themes
-  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  &.gray {
-    @include button-gray-theme;
-  }
-  &.blue {
-    @include button-blue-theme;
-  }
-  &.green {
-    @include button-green-theme;
-  }
-  &.yellow {
-    @include button-yellow-theme;
-  }
-  &.orange {
-    @include button-orange-theme;
-  }
-  &.red {
-    @include button-red-theme;
-  }
-  &.purple {
-    @include button-purple-theme;
-  }
-  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  // Inner elements
-  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  &.gray { @include button-gray-theme; }
+  &.purple { @include button-purple-theme; }
+  &.blue { @include button-blue-theme; }
+  &.green { @include button-green-theme; }
+  &.yellow { @include button-yellow-theme; }
+  &.orange { @include button-orange-theme; }
+  &.red { @include button-red-theme; }
+  // Inner Elements
   .icon {
-    background-color: $black;
+    background-color: $white;
   }
 }

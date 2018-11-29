@@ -1,12 +1,13 @@
 # Default application configuration that all configurations inherit from.
 
 linters:
-  StringQuotes:
-    enabled: true
-    style: double_quotes
-
   EmptyLineBetweenBlocks:
     enabled: false
+
+  ImportantRule:
+    exclude:
+      - "assets/stylesheets/lib/columns/**"
+      - "assets/stylesheets/lib/overriders/**"
 
   NestingDepth:
     enabled: false
@@ -18,3 +19,7 @@ linters:
     enabled: true
     style: space
     allow_single_line_padding: true
+
+  StringQuotes:
+    enabled: true
+    style: double_quotes

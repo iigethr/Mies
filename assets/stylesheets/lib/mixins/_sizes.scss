@@ -1,7 +1,10 @@
-// Sizes
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Sizes
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
 // Button
-
+// -------------------------------------------------------------
 @mixin button-nano-size {
   @include border-corner(2px);
   font-size: 10px;
@@ -105,7 +108,7 @@
 }
 
 // Link
-
+// -------------------------------------------------------------
 @mixin link-nano-size {
   font-size: 14px;
   line-height: 20px;
@@ -197,56 +200,17 @@
 }
 
 // Classes
+// -------------------------------------------------------------
+.button-nano-size { @include button-nano-size; }
+.button-tiny-size { @include button-tiny-size; }
+.button-small-size { @include button-small-size; }
+.button-medium-size { @include button-medium-size; }
+.button-large-size { @include button-large-size; }
+.button-extra-large-size { @include button-extra-large-size; }
 
-// Button
-
-.button-nano-size {
-  @include button-nano-size;
-}
-
-.button-tiny-size {
-  @include button-tiny-size;
-}
-
-.button-small-size {
-  @include button-small-size;
-}
-
-.button-medium-size {
-  @include button-medium-size;
-}
-
-.button-large-size {
-  @include button-large-size;
-}
-
-.button-extra-large-size {
-  @include button-extra-large-size;
-}
-
-
-// Link
-
-.link-nano-size {
-  @include link-nano-size;
-}
-
-.link-tiny-size {
-  @include link-tiny-size;
-}
-
-.link-small-size {
-  @include link-small-size;
-}
-
-.link-medium-size {
-  @include link-medium-size;
-}
-
-.link-large-size {
-  @include link-large-size;
-}
-
-.link-extra-large-size {
-  @include link-extra-large-size;
-}
+.link-nano-size { @include link-nano-size; }
+.link-tiny-size { @include link-tiny-size; }
+.link-small-size { @include link-small-size; }
+.link-medium-size { @include link-medium-size; }
+.link-large-size { @include link-large-size; }
+.link-extra-large-size { @include link-extra-large-size;}

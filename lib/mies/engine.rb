@@ -2,8 +2,13 @@
 
 module Mies
   class Engine < Rails::Engine
-    # Load Assets
-    initializer :mies_assets do
+    # Mies config misc
+    initializer :mies_config_misc do
+      Rails.application.config.sass.inline_source_maps = true
+    end
+
+    # Mies load assets
+    initializer :mies_load_assets do
       Rails.application.config.assets.paths << root.join("assets")
       Rails.application.config.assets.paths << root.join("assets", "icons")
       Rails.application.config.assets.paths << root.join("assets", "images")

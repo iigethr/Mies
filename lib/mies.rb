@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 require "mies/engine"
+require "autoprefixer-rails"
 require "inline_svg"
-require "sass-rails"
+require "sassc-rails"
 
 module Mies
 end

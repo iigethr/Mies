@@ -1,4 +1,7 @@
-// Lists
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Lists
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
 @mixin clear-list {
   list-style-type: none;
@@ -6,8 +9,6 @@
   padding: 0;
 }
 
-//  Classes
-
-.clear-list {
-  @include clear-list;
-}
+// Classes
+// -------------------------------------------------------------
+.clear-list { @include clear-list; }

@@ -1,4 +1,7 @@
-// Base
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Base
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
 * {
   @include border-box;
@@ -8,84 +11,13 @@ html,
 body {
   @include border-box;
   @include clearfix;
+  color: $black;
   font-family: $sans;
   font-size: 18px;
   line-height: 24px;
   margin: 0;
   padding: 0;
   width: auto;
-}
-
-form {
-  float: left;
-  width: 100%;
-  margin: 32px 0;
-  padding: 0;
-  vertical-align: bottom;
-  label {
-    float: left;
-    width: 100%;
-  }
-  .check-boxes,
-  .radio-buttons {
-    label {
-      float: left;
-      width: auto;
-    }
-    input {
-      float: left;
-    }
-  }
-  textarea {
-    float: none;
-    width: 100%;
-  }
-  .field {
-    float: left;
-    margin: 0 0 16px;
-    text-align: left;
-    width: 100%;
-    &:last-child {
-      margin: 16px 0 0;
-    }
-  }
-}
-
-
-table {
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  width: 100%;
-  thead {
-    background-color: $blue-000;
-    border: 1px solid $blue-100;
-    padding: 8px;
-    text-align: left;
-    width: 100%;
-    tr {
-      th {
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-  }
-  tbody {
-    background-color: $white;
-    padding: 8px;
-    text-align: left;
-    width: 100%;
-    tr {
-      border-bottom: 1px solid $gray-200;
-      border-left: 1px solid $gray-200;
-      border-right: 1px solid $gray-200;
-    }
-  }
-  th,
-  td {
-    padding: 16px;
-  }
 }
 
 button,
@@ -96,7 +28,7 @@ button,
 
 a,
 button,
-input[type=submit],
+[type=submit],
 .button,
 .link {
   @include hover-animation(.40s);
@@ -106,9 +38,6 @@ input[type=submit],
   padding: 0;
   vertical-align: bottom;
   width: auto;
-  &.wide {
-    width: 100%;
-  }
   .icon {
     @include hover-animation(.40s);
     border: 0;
@@ -129,4 +58,34 @@ input[type=submit],
       width: auto;
     }
   }
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$nano} {
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$tiny} {
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$small} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$medium} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$large} {
+}
+
+// Media Query 1260px
+// -------------------------------------------------------------
+@media #{$extra-large} {
 }

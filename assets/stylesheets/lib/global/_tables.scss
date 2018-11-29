@@ -1,82 +1,70 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Template
+// File:    Tables
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
-$class: "template";
-
-.#{$class} {
-  @include border-box;
-  .#{$class}-box {
-    @include border-box;
-    .#{$class}-item {
-      @include border-box;
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  thead {
+    background-color: $blue-000;
+    border: 1px solid $blue-100;
+    padding: 8px;
+    text-align: left;
+    width: 100%;
+    tr {
+      th {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
+  }
+  tbody {
+    background-color: $white;
+    padding: 8px;
+    text-align: left;
+    width: 100%;
+    tr {
+      border-bottom: 1px solid $gray-200;
+      border-left: 1px solid $gray-200;
+      border-right: 1px solid $gray-200;
+    }
+  }
+  th,
+  td {
+    padding: 16px;
   }
 }
 
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$nano} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$tiny} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 480px
 // -------------------------------------------------------------
 @media #{$small} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 720px
 // -------------------------------------------------------------
 @media #{$medium} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 960px
 // -------------------------------------------------------------
 @media #{$large} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 1260px
 // -------------------------------------------------------------
 @media #{$extra-large} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }

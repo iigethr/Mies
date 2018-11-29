@@ -1,3 +1,5 @@
+# Reek [https://github.com/troessner/reek]
+
 exclude_paths:
   - db
   - bin

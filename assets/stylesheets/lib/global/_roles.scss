@@ -1,82 +1,74 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Template
+// File:    Roles
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
-$class: "template";
+.header {
+  margin: 0;
+  padding: 16px 0;
+}
 
-.#{$class} {
-  @include border-box;
-  .#{$class}-box {
-    @include border-box;
-    .#{$class}-item {
-      @include border-box;
-    }
-  }
+.main {
+  margin: 0;
+  padding: 32px 0;
+}
+
+.footer {
+  margin: 0;
+  padding: 16px 0;
+}
+
+.container-top {
+  margin: 0;
+  padding: 0;
+}
+
+.container-left {
+  margin: 0;
+  padding: 0;
+}
+
+.container-middle {
+  margin: 0;
+  padding: 0;
+}
+
+.container-right {
+  margin: 0;
+  padding: 0;
+}
+
+.container-bottom {
+  margin: 0;
+  padding: 0;
 }
 
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$nano} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$tiny} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 480px
 // -------------------------------------------------------------
 @media #{$small} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 720px
 // -------------------------------------------------------------
 @media #{$medium} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 960px
 // -------------------------------------------------------------
 @media #{$large} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }
 
 // Media Query 1260px
 // -------------------------------------------------------------
 @media #{$extra-large} {
-  .#{$class} {
-    .#{$class}-box {
-      .#{$class}-item {
-      }
-    }
-  }
 }

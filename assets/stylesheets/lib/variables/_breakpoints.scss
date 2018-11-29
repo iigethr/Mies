@@ -1,8 +1,28 @@
-// Breakpoints
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Breakpoints
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
 
-$nano:        "(max-width: 359px)";
-$tiny:        "(min-width: 360px) and (max-width: 479px)";
-$small:       "(min-width: 480px) and (max-width: 719px)";
-$medium:      "(min-width: 720px) and (max-width: 959px)";
-$large:       "(min-width: 960px) and (max-width: 1259px)";
+// Artboard Width: 240px
+// ------------------------------------------------------------
+$nano: "(max-width: 359px)";
+
+// Artboard Width: 360px
+// ------------------------------------------------------------
+$tiny: "(min-width: 360px) and (max-width: 479px)";
+
+// Artboard Width: 480px
+// ------------------------------------------------------------
+$small: "(min-width: 480px) and (max-width: 719px)";
+
+// Artboard Width: 720px
+// ------------------------------------------------------------
+$medium: "(min-width: 720px) and (max-width: 959px)";
+
+// Artboard Width: 960px
+// ------------------------------------------------------------
+$large: "(min-width: 960px) and (max-width: 1259px)";
+
+// Artboard Width: 1260px
+// ------------------------------------------------------------
 $extra-large: "(min-width: 1260px)";
