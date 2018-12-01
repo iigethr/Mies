@@ -20,17 +20,12 @@ body {
   width: auto;
 }
 
-button,
-.button,
-.link {
-  @include clearfix-left;
-}
-
 a,
 button,
 [type=submit],
 .button,
 .link {
+  @include clearfix-left;
   @include hover-animation(.40s);
   border: 0;
   cursor: pointer;
@@ -57,6 +52,12 @@ button,
       vertical-align: bottom;
       width: auto;
     }
+  }
+  &.left {
+    @include clearfix-left;
+  }
+  &.right {
+    @include clearfix-right;
   }
 }
 
