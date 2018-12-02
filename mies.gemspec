@@ -7,14 +7,15 @@ require "mies/version"
 
 # Specification
 Gem::Specification.new do |spec|
-  spec.name        = "mies"
-  spec.version     = Mies::VERSION
-  spec.authors     = "Team IIGETHR"
-  spec.email       = "talktous@iigethr.com"
-  spec.homepage    = "https://www.iigethr.com"
-  spec.summary     = "A Minimal and Lightweight Design System."
-  spec.license     = "MIT"
-  spec.files       = Dir["{assets,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  spec.name                   = "mies"
+  spec.version                = Mies::VERSION
+  spec.authors                = "Team IIGETHR"
+  spec.email                  = "talktous@iigethr.com"
+  spec.homepage               = "https://www.iigethr.com"
+  spec.summary                = "A Minimal and Lightweight Design System."
+  spec.license                = "MIT"
+  spec.files                  = Dir["{assets,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  spec.required_ruby_version  = "~> 2.3"
 
   # Production
   spec.add_dependency "autoprefixer-rails", "~> 9.0"
