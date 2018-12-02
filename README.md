@@ -9,7 +9,6 @@ A Minimal and Lightweight SCSS Toolset.
 Add this line to your application.css
 
 ```
-*= require normalize
 *= require mies
 ```
 

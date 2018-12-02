@@ -4,22 +4,24 @@
 // -------------------------------------------------------------
 
 table {
+  @include clearfix-left;
   border-collapse: collapse;
+  font-size: 14px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
   text-align: left;
   width: 100%;
   thead {
     background-color: $blue-000;
-    border: 1px solid $blue-100;
+    margin: 0 0 2px;
     padding: 8px;
     text-align: left;
     width: 100%;
-    tr {
-      th {
-        font-size: 14px;
-        line-height: 20px;
-      }
+    tr,
+    th {
+      border: 1px solid $blue-100;
+      width: auto;
     }
   }
   tbody {
@@ -27,14 +29,17 @@ table {
     padding: 8px;
     text-align: left;
     width: 100%;
-    tr {
-      border-bottom: 1px solid $gray-200;
-      border-left: 1px solid $gray-200;
-      border-right: 1px solid $gray-200;
+    tr,
+    td {
+      border: 1px solid $gray-100;
+      width: auto;
     }
   }
+  a,
   th,
   td {
+    font-size: 14px !important;
+    line-height: 24px !important;
     padding: 16px;
   }
 }

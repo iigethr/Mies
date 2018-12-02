@@ -21,5 +21,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency "inline_svg", "~> 1.0"
   spec.add_dependency "rails", "~> 5.2"
   spec.add_dependency "sassc-rails", "~> 2.0"
-  # spec.add_dependency "sass-rails", "~> 5.0"
 end
