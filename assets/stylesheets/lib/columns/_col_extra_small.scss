@@ -4,21 +4,21 @@
 // -------------------------------------------------------------
 
 $width: 360px;
-$class: "col-tiny";
+$class: "col-extra-small";
 
 @import "lib/columns/col_setup";
 @import "lib/columns/col_math";
 
 // Media Query 240px
 // -------------------------------------------------------------
-@media #{$nano} {
+@media #{$double-extra-small} {
   $width: 240px;
   @import "lib/columns/col_math";
 }
 
 // Media Query 360px
 // -------------------------------------------------------------
-@media #{$tiny} {
+@media #{$extra-small} {
   $width: 360px;
   @import "lib/columns/col_math";
 }
@@ -44,7 +44,7 @@ $class: "col-tiny";
   @import "lib/columns/col_math";
 }
 
-// Media Query 1260px
+// Media Query 1440px
 // -------------------------------------------------------------
 @media all and #{$extra-large} {
   $width: 360px;

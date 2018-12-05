@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.summary                = "A Minimal and Lightweight Design System."
   spec.license                = "MIT"
   spec.files                  = Dir["{assets,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
-  spec.required_ruby_version  = "~> 2.3"
+  spec.required_ruby_version  = "~> 2.5"
 
   # Production
   spec.add_dependency "autoprefixer-rails", "~> 9.0"

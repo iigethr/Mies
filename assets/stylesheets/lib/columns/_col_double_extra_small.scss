@@ -1,41 +1,51 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Nano
+// File:    Double Extra Small
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
 $width: 240px;
-$class: "col-nano";
+$class: "col-double-extra-small";
 
 @import "lib/columns/col_setup";
 @import "lib/columns/col_math";
 
-// Media Queries
-
-@media #{$nano} {
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$double-extra-small} {
   $width: 240px;
   @import "lib/columns/col_math";
 }
 
-@media #{$tiny} {
+// Media Query 360px
+// -------------------------------------------------------------
+@media #{$extra-small} {
   $width: 240px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 480px
+// -------------------------------------------------------------
 @media #{$small} {
   $width: 240px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 720px
+// -------------------------------------------------------------
 @media #{$medium} {
   $width: 240px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 960px
+// -------------------------------------------------------------
 @media #{$large} {
   $width: 240px;
   @import "lib/columns/col_math";
 }
 
+// Media Query 1440px
+// -------------------------------------------------------------
 @media all and #{$extra-large} {
   $width: 240px;
   @import "lib/columns/col_math";

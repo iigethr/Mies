@@ -51,10 +51,11 @@ select,
   margin: 0 !important;
   padding: 0 !important;
   width: 100% !important;
-  &.nano { margin: 4px 0 !important; }
-  &.tiny { margin: 8px 0 !important; }
+  &.double-extra-small { margin: 4px 0 !important; }
+  &.extra-small { margin: 8px 0 !important; }
   &.small { margin: 16px 0 !important; }
   &.medium { margin: 32px 0 !important; }
   &.large { margin: 48px 0 !important; }
   &.extra-large { margin: 64px 0 !important; }
+  &.double-extra-large { margin: 64px 0 !important; }
 }

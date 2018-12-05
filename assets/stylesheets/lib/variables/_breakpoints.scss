@@ -5,11 +5,11 @@
 
 // Artboard Width: 240px
 // ------------------------------------------------------------
-$nano: "(max-width: 359px)";
+$double-extra-small: "(max-width: 359px)";
 
 // Artboard Width: 360px
 // ------------------------------------------------------------
-$tiny: "(min-width: 360px) and (max-width: 479px)";
+$extra-small: "(min-width: 360px) and (max-width: 479px)";
 
 // Artboard Width: 480px
 // ------------------------------------------------------------
@@ -21,8 +21,12 @@ $medium: "(min-width: 720px) and (max-width: 959px)";
 
 // Artboard Width: 960px
 // ------------------------------------------------------------
-$large: "(min-width: 960px) and (max-width: 1259px)";
+$large: "(min-width: 960px) and (max-width: 1439px)";
 
-// Artboard Width: 1260px
+// Artboard Width: 1440px
 // ------------------------------------------------------------
-$extra-large: "(min-width: 1260px)";
+$extra-large: "(min-width: 1440px) and (max-width: 1919px)";
+
+// Artboard Width: 1920px
+// ------------------------------------------------------------
+$double-extra-large: "(min-width: 1920px)";

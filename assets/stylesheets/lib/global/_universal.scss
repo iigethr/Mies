@@ -35,7 +35,7 @@ $class: "universal";
 
 // Media Query 240px
 // -------------------------------------------------------------
-@media #{$nano} {
+@media #{$double-extra-small} {
   .#{$class} {
     min-width: 240px;
     .#{$class}-box {
@@ -49,7 +49,7 @@ $class: "universal";
 
 // Media Query 360px
 // -------------------------------------------------------------
-@media #{$tiny} {
+@media #{$extra-small} {
   .#{$class} {
     min-width: 360px;
     .#{$class}-box {
@@ -103,13 +103,27 @@ $class: "universal";
   }
 }
 
-// Media Query 1260px
+// Media Query 1440px
 // -------------------------------------------------------------
 @media #{$extra-large} {
   .#{$class} {
-    min-width: 1260px;
+    min-width: 1440px;
     .#{$class}-box {
-      width: 1260px;
+      width: 1440px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$double-extra-large} {
+  .#{$class} {
+    min-width: 1920px;
+    .#{$class}-box {
+      width: 1920px;
       .#{$class}-item {
         width: 100%;
       }

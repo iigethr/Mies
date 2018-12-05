@@ -13,24 +13,21 @@ h6 {
   margin: 0;
   padding: 0;
   width: 100%;
-  &.lighter {
-    font-weight: lighter;
-  }
 }
 
 h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h2 {
   font-size: 32px;
   line-height: 40px;
 }
 
-h2 {
-  font-size: 26px;
-  line-height: 34px;
-}
-
 h3 {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 h4 {
@@ -39,12 +36,12 @@ h4 {
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
 }
 
@@ -54,33 +51,33 @@ p {
   margin: 0;
   padding: 0;
   width: 100%;
-  &.nano {
+  &.double-extra-small {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  &.extra-small {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  &.small {
     font-size: 14px;
     line-height: 20px;
   }
-  &.tiny {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  &.small {
+  &.medium {
     font-size: 18px;
     line-height: 24px;
   }
-  &.medium {
-    font-size: 22px;
-    line-height: 30px;
-  }
   &.large {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 32px;
   }
   &.extra-large {
     font-size: 32px;
     line-height: 40px;
   }
-  &.strong {
-    font-weight: bold;
-    letter-spacing: .05em;
+  &.double-extra-large {
+    font-size: 40px;
+    line-height: 48px;
   }
   a {
     @include hover-animation(.20s);

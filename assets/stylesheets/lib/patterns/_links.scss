@@ -5,14 +5,16 @@
 
 .link {
   @include link-default-theme;
-  @include link-small-size;
+  @include link-medium-size;
+  float: left;
   // Sizes
-  &.nano { @include link-nano-size; }
-  &.tiny { @include link-tiny-size; }
+  &.double-extra-small { @include link-double-extra-small-size; }
+  &.extra-small { @include link-extra-small-size; }
   &.small { @include link-small-size; }
   &.medium { @include link-medium-size; }
   &.large { @include link-large-size; }
   &.extra-large { @include link-extra-large-size; }
+  &.double-extra-large { @include link-double-extra-large-size; }
   // Themes
   &.gray { @include link-gray-theme; }
   &.purple { @include link-purple-theme; }
@@ -21,8 +23,16 @@
   &.yellow { @include link-yellow-theme; }
   &.orange { @include link-orange-theme; }
   &.red { @include link-red-theme; }
-  // Inner Elements
-  .icon { background-color: $white; }
+  // Icon
+  .icon {
+    background-color: $white;
+    &.left {
+      margin-right: .250em;
+    }
+    &.right {
+      margin-left: .250em;
+    }
+  }
   // Misc
   &.hover-underline {
     text-decoration: none;

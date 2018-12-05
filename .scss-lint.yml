@@ -8,6 +8,7 @@ linters:
     exclude:
       - "assets/stylesheets/lib/columns/**"
       - "assets/stylesheets/lib/overriders/**"
+      - "assets/stylesheets/lib/mixins/**"
 
   NestingDepth:
     enabled: false
