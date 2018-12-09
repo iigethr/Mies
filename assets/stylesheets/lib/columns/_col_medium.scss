@@ -50,3 +50,10 @@ $class: "col-medium";
   $width: 720px;
   @import "lib/columns/col_math";
 }
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$double-extra-large} {
+  $width: 720px;
+  @import "lib/columns/col_math";
+}

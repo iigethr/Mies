@@ -46,7 +46,7 @@ $class: "col-double-extra-large";
 
 // Media Query 1440px
 // -------------------------------------------------------------
-@media all and #{$extra-large} {
+@media #{$extra-large} {
   $width: 1440px;
   @import "lib/columns/col_math";
 }

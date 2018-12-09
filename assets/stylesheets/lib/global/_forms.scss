@@ -22,10 +22,9 @@ form {
     vertical-align: bottom;
   }
 
-  // Legend & label
   legend,
   label {
-    display: inline-block;
+    float: left;
     margin: 0;
     padding: 0;
     width: auto;
@@ -58,13 +57,12 @@ form {
     width: 100%;
   }
 
-  // Select
   select {
     appearance: none;
     border: 0;
     box-shadow: none;
     color: $tap;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     margin: 0;
     outline: none;
@@ -73,13 +71,63 @@ form {
     text-shadow: 0 0 0 $black;
     vertical-align: bottom;
     width: 100%;
+    option {
+      background-color: none;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  // Form row
+  .form-row {
+    float: left;
+    width: 100%;
+  }
+
+  // Field
+  .field {
+    float: left;
+    margin: 0;
+    padding: 8px;
+    text-align: left;
+    width: 100%;
+    // Form wrapper
+    .field-wrapper {
+      float: left;
+      width: 100%;
+    }
+  }
+
+  .input,
+  .textarea {
+    background-color: $gray-100;
+    float: left;
+    padding: 8px;
+    width: 100%;
+  }
+
+  // Select
+  .select {
+    background-color: $gray-100;
+    float: left;
+    padding: 8px;
+    width: 100%;
+    select {
+      text-shadow: 0 0 0 $black;
+    }
   }
 
   // Checkbox & radiobutton
   .checkbox,
   .radiobutton {
+    background-color: $gray-100;
+    float: left;
+    padding: 8px;
+    width: 100%;
     label {
       display: inline;
+      margin: 0;
+      padding: 0;
       vertical-align: bottom;
       width: auto;
     }
@@ -94,6 +142,9 @@ form {
 
   // Date
   .date {
+    background-color: $gray-100;
+    float: left;
+    padding: 8px;
     width: 100%;
     [type=date],
     [type=date]::-webkit-calendar-picker-indicator,
@@ -110,34 +161,30 @@ form {
     }
   }
 
-  // Field
-  .field {
+  // Submit
+  .submit {
     float: left;
-    margin: 0 0 16px;
-    text-align: left;
     width: 100%;
-    &:last-child {
-      margin: 16px 0 0;
-    }
-    .field-wrapper {
+    [type=submit] {
+      appearance: none;
+      border: 0;
+      display: block;
       float: left;
       width: 100%;
     }
   }
 
-  // Actions
-  .actions {
-    float: left;
-    margin: 0 0 16px;
-    text-align: left;
-    width: 100%;
-    &:last-child {
-      margin: 16px 0 0;
-    }
-    .actions-wrapper {
-      float: left;
-      width: 100%;
-    }
+  // Misc
+  .reference,
+  .label-reference {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .label-reference {
+    line-height: inherit;
   }
 }
 
