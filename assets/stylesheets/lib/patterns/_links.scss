@@ -6,6 +6,7 @@
 .link {
   @include link-default-theme;
   @include link-medium-size;
+  display: block;
   float: left;
   // Sizes
   &.double-extra-small { @include link-double-extra-small-size; }
@@ -16,6 +17,7 @@
   &.extra-large { @include link-extra-large-size; }
   &.double-extra-large { @include link-double-extra-large-size; }
   // Themes
+  &.white { @include link-white-theme; }
   &.gray { @include link-gray-theme; }
   &.purple { @include link-purple-theme; }
   &.blue { @include link-blue-theme; }
@@ -26,6 +28,7 @@
   // Icon
   .icon {
     background-color: $white;
+    position: relative;
     &.left {
       margin-right: .250em;
     }
@@ -33,7 +36,14 @@
       margin-left: .250em;
     }
   }
+  &.left,
+  &.right {
+    display: block;
+  }
   // Misc
+  &.underline {
+    text-decoration: underline;
+  }
   &.hover-underline {
     text-decoration: none;
     &:hover,

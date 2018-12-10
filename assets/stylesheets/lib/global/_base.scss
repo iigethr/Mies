@@ -29,10 +29,11 @@ button,
   @include hover-animation(.40s);
   border: 0;
   cursor: pointer;
+  display: block;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  vertical-align: bottom;
+  vertical-align: middle;
   width: auto;
   .icon {
     @include hover-animation(.40s);

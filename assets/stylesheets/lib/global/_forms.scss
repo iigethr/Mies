@@ -11,7 +11,7 @@ form {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  vertical-align: bottom;
+  vertical-align: middle;
   width: 100%;
 
   // Fieldset
@@ -19,7 +19,6 @@ form {
     border: 0;
     margin: 0;
     padding: 0;
-    vertical-align: bottom;
   }
 
   legend,
@@ -35,24 +34,38 @@ form {
   textarea {
     border: 0;
     box-shadow: none;
+    display: inline-block;
     font-size: 18px;
-    line-height: 24px;
-    margin: 0;
     outline: none;
     overflow: auto;
-    padding: 0;
-    vertical-align: bottom;
     width: 100%;
   }
 
   // Input
   input {
-    height: 24px;
+    line-height: 20px;
+    margin: 0;
+    padding: 4px 0 0;
+  }
+
+  input:invalid,
+  input:invalid:focus {
+    box-shadow: 0 0 0 $tap;
+  }
+
+  input:focus::-webkit-input-placeholder,
+  input:focus:-moz-placeholder,
+  input:focus::-moz-placeholder,
+  input:focus:-ms-input-placeholder {
+    color: $tap;
   }
 
   // Textarea
   textarea {
+    line-height: 24px;
+    margin: 0;
     min-height: 72px;
+    padding: 0;
     resize: none;
     width: 100%;
   }
@@ -69,7 +82,7 @@ form {
     overflow: auto;
     padding: 0;
     text-shadow: 0 0 0 $black;
-    vertical-align: bottom;
+    vertical-align: middle;
     width: 100%;
     option {
       background-color: none;
@@ -100,7 +113,7 @@ form {
 
   .input,
   .textarea {
-    background-color: $gray-100;
+    background-color: $white-100;
     float: left;
     padding: 8px;
     width: 100%;
@@ -128,7 +141,7 @@ form {
       display: inline;
       margin: 0;
       padding: 0;
-      vertical-align: bottom;
+      vertical-align: middle;
       width: auto;
     }
     [type=checkbox],
@@ -167,10 +180,8 @@ form {
     width: 100%;
     [type=submit] {
       appearance: none;
-      border: 0;
       display: block;
       float: left;
-      width: 100%;
     }
   }
 

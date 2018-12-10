@@ -48,7 +48,7 @@ h6 {
 p {
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
+  margin: 16px 0;
   padding: 0;
   width: 100%;
   &.double-extra-small {
@@ -83,6 +83,7 @@ p {
     @include hover-animation(.20s);
     @include link-default-theme;
     display: inline-block;
+    float: none;
     font-size: inherit;
     line-height: inherit;
     margin: 0;
@@ -142,3 +143,105 @@ em     { font-style: italic; }
 mark   { background-color: $yellow; }
 small  { font-size: 70%; }
 strong { font-weight: bold; }
+
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$double-extra-small} {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h4 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  h5 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  h6 {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$extra-small} {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h5 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  h6 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$small} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$medium} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$large} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$extra-large} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$double-extra-large} {
+}

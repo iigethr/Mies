@@ -47,11 +47,45 @@ table {
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
+  table {
+    font-size: 12px;
+    line-height: 18px;
+    thead {
+      padding: 4px;
+    }
+    tbody {
+      padding: 4px;
+    }
+    a,
+    th,
+    td {
+      font-size: 12px !important;
+      line-height: 18px !important;
+      padding: 4px;
+    }
+  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$extra-small} {
+  table {
+    font-size: 12px;
+    line-height: 18px;
+    thead {
+      padding: 4px;
+    }
+    tbody {
+      padding: 4px;
+    }
+    a,
+    th,
+    td {
+      font-size: 12px !important;
+      line-height: 18px !important;
+      padding: 4px;
+    }
+  }
 }
 
 // Media Query 480px

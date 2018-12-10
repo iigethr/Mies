@@ -25,21 +25,25 @@ select,
 
 // Displays
 // -------------------------------------------------------------
-.inline         { display: inline !important; }
-.inline-block   { display: inline-block !important; }
+.inline {
+  display: inline !important;
+  float: none !important;
+}
+.inline-block {
+  display: inline-block !important;
+  float: none !important;
+}
 
 // Wrappers
 // -------------------------------------------------------------
-.wide { width: 100% !important; }
-
 .wrap-left,
 .wrap-right {
   vertical-align: baseline !important;
   width: auto !important;
 }
-
 .wrap-left { float: left !important; }
 .wrap-right { float: right !important; }
+.wide { width: 100% !important; }
 
 // Separators
 // -------------------------------------------------------------

@@ -16,6 +16,19 @@
   }
 }
 
+@mixin button-white-theme {
+  background-color: $white-085 !important;
+  color: $black-100 !important;
+  &:link,
+  &:visited {
+    background-color: $white-100 !important;
+  }
+  &:hover,
+  &:active {
+    background-color: $white-100 !important;
+  }
+}
+
 @mixin button-gray-theme {
   background-color: $gray-500 !important;
   color: $gray-000 !important;

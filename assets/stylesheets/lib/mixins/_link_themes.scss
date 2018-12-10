@@ -3,6 +3,18 @@
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
+@mixin link-white-theme {
+  color: $white-085 !important;
+  &:link,
+  &:visited {
+    color: $white-085 !important;
+  }
+  &:hover,
+  &:active {
+    color: $white-100 !important;
+  }
+}
+
 @mixin link-default-theme {
   color: $gray-500 !important;
   &:link,
