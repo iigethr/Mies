@@ -18,6 +18,14 @@ select,
   -webkit-tap-highlight-color: $tap !important;
 }
 
+// Labels
+// -------------------------------------------------------------
+.label {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
 // Floats
 // -------------------------------------------------------------
 .left  { float: left !important; }
@@ -44,13 +52,15 @@ select,
 .wrap-left { float: left !important; }
 .wrap-right { float: right !important; }
 .wide { width: 100% !important; }
+.auto { width: auto !important; }
 
 // Separators
 // -------------------------------------------------------------
 .separator {
   appearance: none !important;
+  background: red;
   border: 0 !important;
-  float: left !important;
+  display: inline-block;
   height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
