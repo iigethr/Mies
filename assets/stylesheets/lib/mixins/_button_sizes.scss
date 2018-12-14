@@ -57,11 +57,11 @@
 @mixin button-extra-large-size {
   font-size: 14px;
   line-height: 20px;
-  padding: 12px 10px 8px;
+  padding: 11px 10px 9px;
   .icon {
     height: 20px;
     margin: 0;
-    top: -2px;
+    top: -1px;
   }
 }
 

@@ -11,8 +11,8 @@ form {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  vertical-align: middle;
   width: 100%;
+  * { vertical-align: bottom; }
 
   // Fieldset
   fieldset {
@@ -34,7 +34,7 @@ form {
   textarea {
     border: 0;
     box-shadow: none;
-    display: inline-block;
+    display: inline;
     font-size: 18px;
     outline: none;
     overflow: auto;
@@ -42,22 +42,13 @@ form {
   }
 
   // Input
-  input {
-    line-height: 20px;
+  [type=text],
+  [type=email],
+  [type=password] {
+    height: 24px;
+    line-height: 24px;
     margin: 0;
-    padding: 4px 0 0;
-  }
-
-  input:invalid,
-  input:invalid:focus {
-    box-shadow: 0 0 0 $tap;
-  }
-
-  input:focus::-webkit-input-placeholder,
-  input:focus:-moz-placeholder,
-  input:focus::-moz-placeholder,
-  input:focus:-ms-input-placeholder {
-    color: $tap;
+    padding: 0;
   }
 
   // Textarea
@@ -70,11 +61,32 @@ form {
     width: 100%;
   }
 
+  ::-webkit-input-placeholder,
+  :-moz-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder {
+    color: $tap;
+    line-height: 1;
+  }
+
+  :focus::-webkit-input-placeholder,
+  :focus:-moz-placeholder,
+  :focus::-moz-placeholder,
+  :focus:-ms-input-placeholder {
+    color: $tap;
+  }
+
+  :invalid,
+  :invalid:focus {
+    box-shadow: 0 0 0 $tap;
+  }
+
   select {
     appearance: none;
     border: 0;
     box-shadow: none;
     color: $tap;
+    display: inline;
     font-size: 14px;
     line-height: 24px;
     margin: 0;
@@ -82,7 +94,6 @@ form {
     overflow: auto;
     padding: 0;
     text-shadow: 0 0 0 $black;
-    vertical-align: middle;
     width: 100%;
     option {
       background-color: none;
@@ -111,7 +122,13 @@ form {
     }
   }
 
-  .input,
+  .input {
+    background-color: $white-100;
+    float: left;
+    padding: 8px;
+    width: 100%;
+  }
+
   .textarea {
     background-color: $white-100;
     float: left;
@@ -141,7 +158,6 @@ form {
       display: inline;
       margin: 0;
       padding: 0;
-      vertical-align: middle;
       width: auto;
     }
     [type=checkbox],
