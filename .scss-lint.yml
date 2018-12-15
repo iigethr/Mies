@@ -9,6 +9,7 @@ linters:
       - "assets/stylesheets/lib/columns/**"
       - "assets/stylesheets/lib/overriders/**"
       - "assets/stylesheets/lib/mixins/**"
+      - "assets/stylesheets/lib/global/_tables.scss"
 
   NestingDepth:
     enabled: false
