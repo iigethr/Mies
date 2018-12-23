@@ -13,8 +13,10 @@
   letter-spacing: .065em;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   white-space: nowrap;
   width: auto;
+
   // Sizes
   &.double-extra-small { @include button-double-extra-small-size; }
   &.extra-small { @include button-extra-small-size; }

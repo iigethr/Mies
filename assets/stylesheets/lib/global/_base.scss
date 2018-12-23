@@ -3,8 +3,11 @@
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
-* {
+*,
+*::after,
+*::before {
   @include border-box;
+  letter-spacing: .01em;
 }
 
 html,
@@ -14,6 +17,7 @@ body {
   color: $black;
   font-family: $sans;
   font-size: 18px;
+  letter-spacing: .01em;
   line-height: 24px;
   margin: 0;
   padding: 0;

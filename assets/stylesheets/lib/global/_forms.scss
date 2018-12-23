@@ -13,7 +13,11 @@ form {
   margin: 0;
   padding: 0;
   width: 100%;
-  * { vertical-align: bottom; }
+  *,
+  *::after,
+  *::before {
+    vertical-align: bottom;
+  }
 
   // Fieldset
   fieldset {
@@ -33,6 +37,8 @@ form {
   // Input & textarea
   input,
   textarea {
+    appearance: none;
+    background-color: transparent;
     border: 0;
     box-shadow: none;
     display: inline;
@@ -43,9 +49,13 @@ form {
   }
 
   // Input
-  [type=text],
-  [type=email],
-  [type=password] {
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"] {
     height: 32px;
     line-height: 32px;
     margin: 0;
@@ -84,6 +94,8 @@ form {
 
   select {
     appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 0 28 12" width="28"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+    background-color: transparent;
     border: 0;
     box-shadow: none;
     color: $tap;
@@ -93,7 +105,7 @@ form {
     margin: 0;
     outline: none;
     overflow: auto;
-    padding: 0;
+    padding: 0 24px 0 0;
     text-shadow: 0 0 0 $black;
     width: 100%;
     option {
@@ -175,15 +187,17 @@ form {
 
   // Date
   .date {
+    @include clearfix-left;
     background-color: $gray-100;
     float: left;
     padding: 8px;
-    width: 100%;
+    width: auto;
     [type=date],
     [type=date]::-webkit-calendar-picker-indicator,
     [type=date]::-webkit-input-placeholder,
     [type=date]::-webkit-inner-spin-button {
       appearance: none;
+      background-color: transparent;
       border: 0;
       display: inline-block;
       visibility: hidden;
