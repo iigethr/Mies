@@ -236,6 +236,20 @@ form {
   .label-reference {
     line-height: inherit;
   }
+
+  .form-nav {
+    float: left;
+    padding: 8px;
+    width: 100%;
+    .form-nav-box {
+      float: left;
+      width: 100%;
+      .form-nav-item {
+        float: left;
+        width: 100%;
+      }
+    }
+  }
 }
 
 // Media Query 240px

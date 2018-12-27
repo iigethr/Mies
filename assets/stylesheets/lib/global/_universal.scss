@@ -7,7 +7,6 @@ $class: "universal";
 
 .#{$class} {
   @include border-box;
-  @include clearfix;
   float: left;
   margin: 0 auto;
   min-width: 240px;
@@ -23,7 +22,6 @@ $class: "universal";
     width: 240px;
     .#{$class}-item {
       @include border-box;
-      @include clearfix;
       float: left;
       margin: 0 auto;
       overflow: hidden;
