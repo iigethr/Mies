@@ -4,20 +4,20 @@
 // -------------------------------------------------------------
 
 @mixin link-double-extra-small-size {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 16px;
   .icon {
-    height: 10px;
-    margin: 2px 0 0;
+    height: 16px;
+    margin: 0;
   }
 }
 
 @mixin link-extra-small-size {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   .icon {
-    height: 12px;
-    margin: 2px 0 0;
+    height: 18px;
+    margin: 0;
   }
 }
 
@@ -25,43 +25,43 @@
   font-size: 14px;
   line-height: 20px;
   .icon {
-    height: 14px;
-    margin: 2px 0 0;
+    height: 20px;
+    margin: 0;
   }
 }
 
 @mixin link-medium-size {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   .icon {
-    height: 18px;
-    margin: 1px 0 0;
+    height: 24px;
+    margin: 0;
   }
 }
 
 @mixin link-large-size {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 32px;
   .icon {
-    height: 24px;
-    margin: 2px 0 0;
+    height: 32px;
+    margin: 0;
   }
 }
 
 @mixin link-extra-large-size {
-  font-size: 32px;
+  font-size: 14px;
   line-height: 40px;
   .icon {
-    height: 32px;
-    margin: 1px 0 0;
+    height: 40px;
+    margin: 0;
   }
 }
 
 @mixin link-double-extra-large-size {
-  font-size: 40px;
+  font-size: 14px;
   line-height: 48px;
   .icon {
-    height: 40px;
+    height: 48px;
     margin: 0;
   }
 }
