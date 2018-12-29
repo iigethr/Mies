@@ -5,6 +5,7 @@
 
 form {
   border: 0;
+  color: $gray-500;
   float: left;
   font-family: $sans;
   font-size: 14px;
@@ -26,9 +27,21 @@ form {
     padding: 0;
   }
 
-  legend,
+  legend {
+    color: $gray-700;
+    float: left;
+    font-family: $sans;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 32px;
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+  }
+
   label {
     float: left;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     width: auto;
@@ -41,6 +54,7 @@ form {
     background-color: transparent;
     border: 0;
     box-shadow: none;
+    color: $gray-700;
     display: inline;
     font-size: 18px;
     outline: none;
@@ -176,6 +190,9 @@ form {
     background-color: $gray-100;
     border: 1px solid $gray-300;
     float: left;
+    font-family: $sans;
+    font-size: 14px;
+    line-height: 24px;
     padding: 7px;
     width: 100%;
     label {
