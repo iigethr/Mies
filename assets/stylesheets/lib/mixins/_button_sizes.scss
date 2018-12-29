@@ -45,7 +45,7 @@
 @mixin button-large-size {
   font-size: 10px;
   line-height: 18px;
-  padding: 7px 7px 7px;
+  padding: 6px;
   .icon {
     height: 18px;
     margin: 0;
@@ -56,7 +56,7 @@
 @mixin button-extra-large-size {
   font-size: 12px;
   line-height: 20px;
-  padding: 11px 10px 9px;
+  padding: 10px 9px 8px;
   .icon {
     height: 20px;
     margin: 0;

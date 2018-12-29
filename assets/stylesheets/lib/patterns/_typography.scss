@@ -92,6 +92,31 @@ p {
     padding: 0;
     text-decoration: underline;
     vertical-align: bottom;
+    &.link-default-theme { @include link-default-theme; }
+    &.link-gray-theme { @include link-gray-theme; }
+    &.link-purple-light-theme { @include link-purple-light-theme; }
+    &.link-purple-theme { @include link-purple-theme; }
+    &.link-blue-theme { @include link-blue-theme; }
+    &.link-green-theme { @include link-green-theme; }
+    &.link-green-dark-theme { @include link-green-dark-theme; }
+    &.link-yellow-theme { @include link-yellow-theme; }
+    &.link-yellow-dark-theme { @include link-yellow-dark-theme; }
+    &.link-orange-theme { @include link-orange-theme; }
+    &.link-red-theme { @include link-red-theme; }
+    &.underline {
+      text-decoration: underline;
+    }
+    &.no-underline {
+      text-decoration: none;
+    }
+    span {
+      &.underline {
+        text-decoration: underline;
+      }
+      &.no-underline {
+        text-decoration: none;
+      }
+    }
   }
 }
 

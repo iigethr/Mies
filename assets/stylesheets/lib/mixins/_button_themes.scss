@@ -70,14 +70,17 @@
 
 @mixin button-green-theme {
   background-color: $green-500 !important;
+  border: 1px solid $green-600 !important;
   color: $green-000 !important;
   &:link,
   &:visited {
     background-color: $green-500 !important;
+    border: 1px solid $green-600 !important;
   }
   &:hover,
   &:active {
     background-color: $green-600 !important;
+    border: 1px solid $green-700 !important;
   }
 }
 

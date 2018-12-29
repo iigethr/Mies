@@ -18,5 +18,5 @@
 // Classes
 // -------------------------------------------------------------
 .border-box { @include border-box; }
-.border-corner { @include border-corner(0); }
-.border-top-corner { @include border-top-corner(0); }
+.border-corner { @include border-corner(3px); }
+.border-top-corner { @include border-top-corner(3px); }
