@@ -21,8 +21,8 @@ form {
 
   // Fieldset
   fieldset {
-    float: left;
     border: 0;
+    float: left;
     margin: 0;
     padding: 0;
   }
@@ -45,6 +45,10 @@ form {
     margin: 0;
     padding: 0;
     width: auto;
+    i {
+      color: $gray-300;
+      font-weight: normal;
+    }
   }
 
   // Input & textarea
@@ -86,6 +90,8 @@ form {
     width: 100%;
   }
 
+  // scss-lint:disable PseudoElement
+  // scss-lint:disable VendorPrefix
   ::-webkit-input-placeholder,
   :-moz-placeholder,
   ::-moz-placeholder,
@@ -105,6 +111,8 @@ form {
   :invalid:focus {
     box-shadow: 0 0 0 $tap;
   }
+  // scss-lint:enable PseudoElement
+  // scss-lint:enable VendorPrefix
 
   select {
     appearance: none;
