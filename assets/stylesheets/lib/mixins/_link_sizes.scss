@@ -4,38 +4,34 @@
 // -------------------------------------------------------------
 
 @mixin link-double-extra-small-size {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 16px;
   .icon {
     height: 16px;
-    margin: 0;
   }
 }
 
 @mixin link-extra-small-size {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 18px;
   .icon {
     height: 18px;
-    margin: 0;
   }
 }
 
 @mixin link-small-size {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   .icon {
     height: 20px;
-    margin: 0;
   }
 }
 
 @mixin link-medium-size {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   .icon {
     height: 24px;
-    margin: 0;
   }
 }
 
@@ -44,7 +40,6 @@
   line-height: 32px;
   .icon {
     height: 32px;
-    margin: 0;
   }
 }
 
@@ -53,7 +48,6 @@
   line-height: 40px;
   .icon {
     height: 40px;
-    margin: 0;
   }
 }
 
@@ -62,7 +56,6 @@
   line-height: 48px;
   .icon {
     height: 48px;
-    margin: 0;
   }
 }
 

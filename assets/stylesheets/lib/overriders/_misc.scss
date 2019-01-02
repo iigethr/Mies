@@ -80,12 +80,12 @@ select,
 .move { cursor: move; }
 .handle { cursor: move; }
 
-
 // Underline
 // -------------------------------------------------------------
-.underline {
-  text-decoration: underline !important;
-}
-.no-underline {
-  text-decoration: none !important;
-}
+.underline { text-decoration: underline !important; }
+.no-underline { text-decoration: none !important; }
+
+// Positions
+// -------------------------------------------------------------
+.absolute { position: absolute; }
+.relative { position: relative; }
