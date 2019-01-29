@@ -49,18 +49,19 @@ button,
     padding: 0;
     vertical-align: bottom;
     width: auto;
-    img,
-    svg {
-      border: 0;
-      display: block;
-      float: left;
-      height: inherit;
-      margin: 0;
-      padding: 0;
-      vertical-align: bottom;
-      width: auto;
-    }
   }
+}
+
+img,
+svg {
+  border: 0;
+  display: block;
+  float: left;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  width: auto;
 }
 
 // Media Query 240px
