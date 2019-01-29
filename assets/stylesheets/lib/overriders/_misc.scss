@@ -54,7 +54,27 @@ select,
 .wide { width: 100% !important; }
 .auto { width: auto !important; }
 
-// Separators
+// Divider
+// -------------------------------------------------------------
+.divider {
+  appearance: none !important;
+  border: 0 !important;
+  display: block !important;
+  float: left !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  &.double-extra-small { margin: 0 4px !important; }
+  &.extra-small { margin: 0 8px !important; }
+  &.small { margin: 0 16px !important; }
+  &.medium { margin: 0 32px !important; }
+  &.large { margin: 0 48px !important; }
+  &.extra-large { margin: 0 64px !important; }
+  &.double-extra-large { margin: 0 80px !important; }
+}
+
+// Separator
 // -------------------------------------------------------------
 .separator {
   appearance: none !important;

@@ -27,7 +27,7 @@
   &.red { @include link-red-theme; }
   // Icon
   .icon {
-    background-color: $white;
+    background-color: transparent;
     position: relative;
     &.left {
       margin-right: .250em;
