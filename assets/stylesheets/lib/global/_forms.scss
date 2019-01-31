@@ -167,6 +167,26 @@ form {
     width: 100%;
   }
 
+  .file {
+    @include border-corner(3px);
+    background-color: $white-100;
+    float: left;
+    padding: 0;
+    width: 100%;
+    [type=file] {
+      appearance: none;
+      background-color: transparent;
+      filter: alpha(opacity = 0);
+      opacity: 0;
+      position: absolute;
+      width: 0;
+    }
+    label {
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
   .textarea {
     @include border-corner(3px);
     background-color: $white-100;
