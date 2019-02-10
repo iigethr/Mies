@@ -247,10 +247,12 @@ form {
 
   // Date
   .date {
+    @include border-corner(3px);
     @include clearfix-left;
     background-color: $gray-100;
+    border: 1px solid $gray-300;
     float: left;
-    padding: 8px;
+    padding: 7px;
     width: auto;
     [type=date],
     [type=date]::-webkit-calendar-picker-indicator,
