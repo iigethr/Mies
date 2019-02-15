@@ -26,7 +26,7 @@
 @mixin button-small-size {
   font-size: 8px;
   line-height: 12px;
-  padding: 4px 3px 2px;
+  padding: 4px 7px 2px;
   .icon {
     height: 12px;
     top: -1px;
@@ -36,7 +36,7 @@
 @mixin button-medium-size {
   font-size: 8px;
   line-height: 14px;
-  padding: 5px 4px 3px;
+  padding: 5px 11px 3px;
   .icon {
     height: 14px;
     top: -1px;
@@ -46,7 +46,7 @@
 @mixin button-large-size {
   font-size: 10px;
   line-height: 18px;
-  padding: 6px;
+  padding: 6px 16px 6px;
   .icon {
     height: 18px;
     top: 0;

@@ -299,16 +299,38 @@ form {
     vertical-align: baseline;
   }
 
+  // Form navigation
   .form-nav {
     float: left;
-    padding: 8px;
     width: 100%;
     .form-nav-box {
       float: left;
+      padding: 8px;
       width: 100%;
       .form-nav-item {
         float: left;
         width: 100%;
+      }
+    }
+  }
+
+  // Form errors
+  .form-errors {
+    float: left;
+    width: 100%;
+    .form-errors-box {
+      @include clear-list;
+      float: left;
+      padding: 4px;
+      width: 100%;
+      .form-errors-item {
+        float: left;
+        padding: 4px;
+        width: 100%;
+        p {
+          color: $red;
+          text-decoration: underline;
+        }
       }
     }
   }
