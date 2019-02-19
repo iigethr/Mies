@@ -17,6 +17,7 @@
   &.extra-large { @include link-extra-large-size; }
   &.double-extra-large { @include link-double-extra-large-size; }
   // Themes
+  &.black { @include link-black-theme; }
   &.white { @include link-white-theme; }
   &.gray { @include link-gray-theme; }
   &.purple { @include link-purple-theme; }
@@ -30,10 +31,10 @@
     background-color: transparent;
     position: relative;
     &.left {
-      margin-right: .250em;
+      margin-right: .5em;
     }
     &.right {
-      margin-left: .250em;
+      margin-left: .5em;
     }
   }
   &.left,

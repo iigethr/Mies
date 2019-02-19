@@ -3,18 +3,6 @@
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
-@mixin link-white-theme {
-  color: $white-085 !important;
-  &:link,
-  &:visited {
-    color: $white-085 !important;
-  }
-  &:hover,
-  &:active {
-    color: $white-100 !important;
-  }
-}
-
 @mixin link-default-theme {
   color: $gray-500 !important;
   &:link,
@@ -27,6 +15,30 @@
   }
 }
 
+@mixin link-black-theme {
+  color: $black-085 !important;
+  &:link,
+  &:visited {
+    color: $black-085 !important;
+  }
+  &:hover,
+  &:active {
+    color: $black-100 !important;
+  }
+}
+
+@mixin link-white-theme {
+  color: $white-085 !important;
+  &:link,
+  &:visited {
+    color: $white-085 !important;
+  }
+  &:hover,
+  &:active {
+    color: $white-100 !important;
+  }
+}
+
 @mixin link-gray-theme {
   color: $gray-500 !important;
   &:link,
@@ -36,6 +48,30 @@
   &:hover,
   &:active {
     color: $gray-600 !important;
+  }
+}
+
+@mixin link-purple-light-theme {
+  color: $purple-100 !important;
+  &:link,
+  &:visited {
+    color: $purple-100 !important;
+  }
+  &:hover,
+  &:active {
+    color: $purple-000 !important;
+  }
+}
+
+@mixin link-purple-theme {
+  color: $purple-500 !important;
+  &:link,
+  &:visited {
+    color: $purple-500 !important;
+  }
+  &:hover,
+  &:active {
+    color: $purple-600 !important;
   }
 }
 
@@ -123,31 +159,9 @@
   }
 }
 
-@mixin link-purple-light-theme {
-  color: $purple-100 !important;
-  &:link,
-  &:visited {
-    color: $purple-100 !important;
-  }
-  &:hover,
-  &:active {
-    color: $purple-000 !important;
-  }
-}
-
-@mixin link-purple-theme {
-  color: $purple-500 !important;
-  &:link,
-  &:visited {
-    color: $purple-500 !important;
-  }
-  &:hover,
-  &:active {
-    color: $purple-600 !important;
-  }
-}
-
 .link-default-theme { @include link-default-theme; }
+.link-black-theme { @include link-black-theme; }
+.link-white-theme { @include link-white-theme; }
 .link-gray-theme { @include link-gray-theme; }
 .link-purple-light-theme { @include link-purple-light-theme; }
 .link-purple-theme { @include link-purple-theme; }

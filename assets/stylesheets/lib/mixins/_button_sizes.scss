@@ -6,7 +6,8 @@
 @mixin button-double-extra-small-size {
   font-size: 8px;
   line-height: 8px;
-  padding: 3px;
+  min-height: 16px;
+  padding: 3px 7px;
   .icon {
     height: 8px;
     top: 0;
@@ -16,7 +17,8 @@
 @mixin button-extra-small-size {
   font-size: 8px;
   line-height: 10px;
-  padding: 3px;
+  min-height: 18px;
+  padding: 3px 8px;
   .icon {
     height: 10px;
     top: 0;
@@ -26,7 +28,8 @@
 @mixin button-small-size {
   font-size: 8px;
   line-height: 12px;
-  padding: 4px 7px 2px;
+  min-height: 20px;
+  padding: 4px 9px 2px;
   .icon {
     height: 12px;
     top: -1px;
@@ -36,6 +39,7 @@
 @mixin button-medium-size {
   font-size: 8px;
   line-height: 14px;
+  min-height: 24px;
   padding: 5px 11px 3px;
   .icon {
     height: 14px;
@@ -46,7 +50,8 @@
 @mixin button-large-size {
   font-size: 10px;
   line-height: 18px;
-  padding: 6px 16px 6px;
+  min-height: 32px;
+  padding: 6px 15px;
   .icon {
     height: 18px;
     top: 0;
@@ -56,7 +61,8 @@
 @mixin button-extra-large-size {
   font-size: 12px;
   line-height: 20px;
-  padding: 10px 9px 8px;
+  min-height: 40px;
+  padding: 10px 19px 8px;
   .icon {
     height: 20px;
     top: -1px;
@@ -66,7 +72,8 @@
 @mixin button-double-extra-large-size {
   font-size: 12px;
   line-height: 24px;
-  padding: 12px 11px 10px;
+  min-height: 48px;
+  padding: 12px 23px 10px;
   .icon {
     height: 24px;
     top: -1px;

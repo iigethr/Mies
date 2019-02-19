@@ -17,68 +17,68 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 48px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 40px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 18px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   margin: 0;
   padding: 0;
   vertical-align: bottom;
   width: 100%;
   &.double-extra-small {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 16px;
   }
   &.extra-small {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 18px;
   }
   &.small {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
   }
   &.medium {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   &.large {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
   }
   &.extra-large {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 40px;
   }
   &.double-extra-large {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 48px;
   }
   a {
@@ -92,6 +92,7 @@ p {
     padding: 0;
     text-decoration: underline;
     vertical-align: bottom;
+    // Themes
     &.link-default-theme { @include link-default-theme; }
     &.link-gray-theme { @include link-gray-theme; }
     &.link-purple-light-theme { @include link-purple-light-theme; }
@@ -103,6 +104,7 @@ p {
     &.link-yellow-dark-theme { @include link-yellow-dark-theme; }
     &.link-orange-theme { @include link-orange-theme; }
     &.link-red-theme { @include link-red-theme; }
+    // Misc
     &.underline {
       text-decoration: underline;
     }
@@ -122,13 +124,13 @@ p {
 
 blockquote {
   background-color: $gray;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   margin: 32px;
   padding: 16px;
   width: auto;
   footer {
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
     line-height: 20px;
     text-align: left;
@@ -143,7 +145,7 @@ ul {
   padding: 0;
   width: auto;
   li {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin: 0;
     padding: 0;

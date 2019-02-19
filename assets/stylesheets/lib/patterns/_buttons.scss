@@ -8,6 +8,7 @@
   @include button-default-theme;
   @include button-medium-size;
   appearance: none;
+  border: 1px solid;
   display: block;
   float: left;
   font-weight: 700;
@@ -17,7 +18,6 @@
   text-transform: uppercase;
   white-space: nowrap;
   width: auto;
-
   // Sizes
   &.double-extra-small { @include button-double-extra-small-size; }
   &.extra-small { @include button-extra-small-size; }
@@ -27,6 +27,7 @@
   &.extra-large { @include button-extra-large-size; }
   &.double-extra-large { @include button-double-extra-large-size; }
   // Themes
+  &.black { @include button-black-theme; }
   &.white { @include button-white-theme; }
   &.gray { @include button-gray-theme; }
   &.purple { @include button-purple-theme; }
@@ -37,13 +38,24 @@
   &.red { @include button-red-theme; }
   // Icon
   .icon {
-    background-color: $white;
+    background-color: transparent;
     position: relative;
     &.left {
-      margin-right: .5em;
+      margin-right: .75em;
     }
     &.right {
-      margin-left: .5em;
+      margin-left: .75em;
+    }
+  }
+  // Misc
+  &.underline {
+    text-decoration: underline;
+  }
+  &.hover-underline {
+    text-decoration: none;
+    &:hover,
+    &:active {
+      text-decoration: underline;
     }
   }
 }
