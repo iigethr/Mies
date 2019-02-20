@@ -37,17 +37,17 @@
 
 @mixin button-white-theme {
   background-color: $white-085 !important;
-  border-color: $white-085 !important;
+  border-color: $gray-300 !important;
   color: $black-100 !important;
   &:link,
   &:visited {
     background-color: $white-085 !important;
-    border-color: $white-085 !important;
+    border-color: $gray-300 !important;
   }
   &:hover,
   &:active {
     background-color: $white-100 !important;
-    border-color: $white-100 !important;
+    border-color: $gray-300 !important;
   }
 }
 
