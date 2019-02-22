@@ -106,6 +106,7 @@ form {
   :focus::-moz-placeholder,
   :focus:-ms-input-placeholder {
     color: $tap;
+    opacity: 0;
   }
 
   :invalid,
