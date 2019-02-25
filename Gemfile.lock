@@ -53,7 +53,7 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     ast (2.4.0)
-    autoprefixer-rails (9.4.8)
+    autoprefixer-rails (9.4.9)
       execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -98,7 +98,7 @@ GEM
       activesupport (>= 3.0)
       nokogiri (>= 1.6)
     jaro_winkler (1.5.2)
-    json (2.1.0)
+    json (2.2.0)
     kwalify (0.7.2)
     loofah (2.2.3)
       crass (~> 1.0.2)

@@ -56,30 +56,68 @@ p {
   &.double-extra-small {
     font-size: 8px;
     line-height: 16px;
+    img,
+    svg {
+      height: 16px;
+    }
   }
   &.extra-small {
     font-size: 10px;
     line-height: 18px;
+    img,
+    svg {
+      height: 18px;
+    }
   }
   &.small {
     font-size: 12px;
     line-height: 20px;
+    img,
+    svg {
+      height: 20px;
+    }
   }
   &.medium {
     font-size: 16px;
     line-height: 24px;
+    img,
+    svg {
+      height: 24px;
+    }
   }
   &.large {
     font-size: 20px;
     line-height: 32px;
+    img,
+    svg {
+      height: 32px;
+    }
   }
   &.extra-large {
     font-size: 24px;
     line-height: 40px;
+    img,
+    svg {
+      height: 40px;
+    }
   }
   &.double-extra-large {
     font-size: 36px;
     line-height: 48px;
+    img,
+    svg {
+      height: 48px;
+    }
+  }
+  img,
+  svg {
+    display: inline;
+    float: none;
+    height: 24px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
   }
   a {
     @include hover-animation(.20s);
