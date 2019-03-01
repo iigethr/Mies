@@ -82,10 +82,12 @@
 
 // Classes
 // -------------------------------------------------------------
-.button-double-extra-small-size { @include button-double-extra-small-size; }
-.button-extra-small-size { @include button-extra-small-size; }
-.button-small-size { @include button-small-size; }
-.button-medium-size { @include button-medium-size; }
-.button-large-size { @include button-large-size; }
-.button-extra-large-size { @include button-extra-large-size; }
-.button-double-extra-large-size { @include button-double-extra-large-size; }
+.button {
+  &.double-extra-small  { @include button-double-extra-small-size; }
+  &.extra-small         { @include button-extra-small-size; }
+  &.small               { @include button-small-size; }
+  &.medium              { @include button-medium-size; }
+  &.large               { @include button-large-size; }
+  &.extra-large         { @include button-extra-large-size; }
+  &.double-extra-large  { @include button-double-extra-large-size; }
+}

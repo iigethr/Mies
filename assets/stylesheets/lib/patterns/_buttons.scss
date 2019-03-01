@@ -44,16 +44,6 @@
   &.large { @include button-large-size; }
   &.extra-large { @include button-extra-large-size; }
   &.double-extra-large { @include button-double-extra-large-size; }
-  // Themes
-  &.black { @include button-black-theme; }
-  &.white { @include button-white-theme; }
-  &.gray { @include button-gray-theme; }
-  &.purple { @include button-purple-theme; }
-  &.blue { @include button-blue-theme; }
-  &.green { @include button-green-theme; }
-  &.yellow { @include button-yellow-theme; }
-  &.orange { @include button-orange-theme; }
-  &.red { @include button-red-theme; }
   // Misc
   &.underline {
     text-decoration: underline;

@@ -61,10 +61,12 @@
 
 // Classes
 // -------------------------------------------------------------
-.link-double-extra-small-size { @include link-double-extra-small-size; }
-.link-extra-small-size { @include link-extra-small-size; }
-.link-small-size { @include link-small-size; }
-.link-medium-size { @include link-medium-size; }
-.link-large-size { @include link-large-size; }
-.link-extra-large-size { @include link-extra-large-size;}
-.link-double-extra-large-size { @include link-double-extra-large-size;}
+.link {
+  &.double-extra-small  { @include link-double-extra-small-size; }
+  &.extra-small         { @include link-extra-small-size; }
+  &.small               { @include link-small-size; }
+  &.medium              { @include link-medium-size; }
+  &.large               { @include link-large-size; }
+  &.extra-large         { @include link-extra-large-size; }
+  &.double-extra-large  { @include link-double-extra-large-size; }
+}
