@@ -18,27 +18,27 @@
 
 // Black
 @mixin link-black-theme {
-  color: $black-085 !important;
+  color: $gray-700 !important;
   &:link,
   &:visited {
-    color: $black-085 !important;
+    color: $gray-700 !important;
   }
   &:hover,
   &:active {
-    color: $black-100 !important;
+    color: $black !important;
   }
 }
 
 // White
 @mixin link-white-theme {
-  color: $white-085 !important;
+  color: $gray-100 !important;
   &:link,
   &:visited {
-    color: $white-085 !important;
+    color: $gray-100 !important;
   }
   &:hover,
   &:active {
-    color: $white-100 !important;
+    color: $white !important;
   }
 }
 
