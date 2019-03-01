@@ -18,6 +18,24 @@
   text-transform: uppercase;
   white-space: nowrap;
   width: auto;
+  // Icon
+  .icon {
+    &.left {
+      margin-right: .75em;
+    }
+    &.right {
+      margin-left: .75em;
+    }
+  }
+  // Span
+  span {
+    &.underline {
+      text-decoration: underline;
+    }
+    &.no-underline {
+      text-decoration: none;
+    }
+  }
   // Sizes
   &.double-extra-small { @include button-double-extra-small-size; }
   &.extra-small { @include button-extra-small-size; }
@@ -36,20 +54,12 @@
   &.yellow { @include button-yellow-theme; }
   &.orange { @include button-orange-theme; }
   &.red { @include button-red-theme; }
-  // Icon
-  .icon {
-    background-color: transparent;
-    position: relative;
-    &.left {
-      margin-right: .75em;
-    }
-    &.right {
-      margin-left: .75em;
-    }
-  }
   // Misc
   &.underline {
     text-decoration: underline;
+  }
+  &.no-underline {
+    text-decoration: none;
   }
   &.hover-underline {
     text-decoration: none;

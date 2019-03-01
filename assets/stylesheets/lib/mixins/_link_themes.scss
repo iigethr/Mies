@@ -158,15 +158,3 @@
     color: $red-600 !important;
   }
 }
-
-.link-default-theme { @include link-default-theme; }
-.link-black-theme { @include link-black-theme; }
-.link-white-theme { @include link-white-theme; }
-.link-gray-theme { @include link-gray-theme; }
-.link-purple-light-theme { @include link-purple-light-theme; }
-.link-purple-theme { @include link-purple-theme; }
-.link-blue-theme { @include link-blue-theme; }
-.link-green-theme { @include link-green-theme; }
-.link-yellow-theme { @include link-yellow-theme; }
-.link-orange-theme { @include link-orange-theme; }
-.link-red-theme { @include link-red-theme; }
