@@ -11,6 +11,7 @@ form {
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  max-width: 100%;
   padding: 0;
   width: 100%;
   *,
@@ -24,6 +25,7 @@ form {
     border: 0;
     float: left;
     margin: 0;
+    max-width: 100%;
     padding: 0;
     width: 100%;
   }
@@ -36,6 +38,7 @@ form {
     font-weight: 100;
     line-height: 32px;
     margin: 0;
+    max-width: 100%;
     padding: 8px;
     width: 100%;
   }
@@ -62,6 +65,7 @@ form {
     color: $gray;
     display: inline;
     font-size: 16px;
+    max-width: 100%;
     outline: none;
     overflow: auto;
     width: 100%;
@@ -85,6 +89,7 @@ form {
   textarea {
     line-height: 24px;
     margin: 0;
+    max-width: 100%;
     min-height: 72px;
     padding: 0;
     resize: none;
@@ -130,6 +135,7 @@ form {
     font-size: 14px;
     line-height: 24px;
     margin: 0;
+    max-width: 100%;
     outline: none;
     overflow: auto;
     padding: 0 24px 0 0;
@@ -201,8 +207,22 @@ form {
     border: 1px solid $gray-200;
     float: left;
     max-width: 100%;
+    min-height: 128px;
     padding: 8px;
     width: 100%;
+    trix-editor {
+      border: 1px solid $gray-200;
+      min-height: 128px;
+    }
+  }
+
+  .textarea {
+    &.body {
+      min-height: 256px;
+      trix-editor {
+        min-height: 256px;
+      }
+    }
   }
 
   // Select
@@ -305,6 +325,7 @@ form {
   }
   .reference {
     float: left;
+    max-width: 100%;
     width: 100%;
   }
   .label-reference {
@@ -315,13 +336,16 @@ form {
   // Form navigation
   .form-nav {
     float: left;
+    max-width: 100%;
     width: 100%;
     .form-nav-box {
       float: left;
+      max-width: 100%;
       padding: 8px;
       width: 100%;
       .form-nav-item {
         float: left;
+        max-width: 100%;
         width: 100%;
       }
     }
@@ -330,14 +354,17 @@ form {
   // Form errors
   .form-errors {
     float: left;
+    max-width: 100%;
     width: 100%;
     .form-errors-box {
       @include clear-list;
       float: left;
+      max-width: 100%;
       padding: 4px;
       width: 100%;
       .form-errors-item {
         float: left;
+        max-width: 100%;
         padding: 4px;
         width: 100%;
         p {
