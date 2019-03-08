@@ -27,35 +27,15 @@
       margin-left: .75em;
     }
   }
-  // Span
-  span {
-    &.underline {
-      text-decoration: underline;
+  &.no-bg {
+    background-color: $tap;
+    &:link,
+    &:visited {
+      background-color: $tap;
     }
-    &.no-underline {
-      text-decoration: none;
-    }
-  }
-  // Sizes
-  &.double-extra-small { @include button-double-extra-small-size; }
-  &.extra-small { @include button-extra-small-size; }
-  &.small { @include button-small-size; }
-  &.medium { @include button-medium-size; }
-  &.large { @include button-large-size; }
-  &.extra-large { @include button-extra-large-size; }
-  &.double-extra-large { @include button-double-extra-large-size; }
-  // Misc
-  &.underline {
-    text-decoration: underline;
-  }
-  &.no-underline {
-    text-decoration: none;
-  }
-  &.hover-underline {
-    text-decoration: none;
     &:hover,
     &:active {
-      text-decoration: underline;
+      background-color: $tap;
     }
   }
 }

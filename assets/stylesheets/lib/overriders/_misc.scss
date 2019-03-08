@@ -41,6 +41,13 @@ select,
   display: inline-block !important;
   float: none !important;
 }
+.link,
+.button {
+  &.left,
+  &.right {
+    display: block !important;
+  }
+}
 
 // Wrappers
 // -------------------------------------------------------------
@@ -104,6 +111,13 @@ select,
 // -------------------------------------------------------------
 .underline { text-decoration: underline !important; }
 .no-underline { text-decoration: none !important; }
+.hover-underline {
+  text-decoration: none !important;
+  &:hover,
+  &:active {
+    text-decoration: underline !important;
+  }
+}
 
 // Positions
 // -------------------------------------------------------------

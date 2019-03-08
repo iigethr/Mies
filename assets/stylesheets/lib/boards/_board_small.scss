@@ -1,14 +1,14 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Board large
+// File:    Board small
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
-$class: "board-large";
+$class: "board-small";
 
 .#{$class} {
   @include border-box;
   float: left;
-  width: 720px;
+  width: 480px;
   .#{$class}-box {
     @include border-box;
     float: left;
@@ -23,6 +23,7 @@ $class: "board-large";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    width: 240px;
     .#{$class}-box {
       .#{$class}-item {
       }
@@ -34,6 +35,7 @@ $class: "board-large";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    width: 360px;
     .#{$class}-box {
       .#{$class}-item {
       }

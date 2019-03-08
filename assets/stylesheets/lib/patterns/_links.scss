@@ -17,31 +17,4 @@
       margin-left: .5em;
     }
   }
-  // Span
-  span {
-    &.underline {
-      text-decoration: underline;
-    }
-    &.no-underline {
-      text-decoration: none;
-    }
-  }
-  // Misc
-  &.left,
-  &.right {
-    display: block;
-  }
-  &.underline {
-    text-decoration: underline;
-  }
-  &.no-underline {
-    text-decoration: none;
-  }
-  &.hover-underline {
-    text-decoration: none;
-    &:hover,
-    &:active {
-      text-decoration: underline;
-    }
-  }
 }

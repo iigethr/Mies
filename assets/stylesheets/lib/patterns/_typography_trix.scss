@@ -1,0 +1,154 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Typography
+// Project: Mies by IIGETHR
+// -------------------------------------------------------------
+
+.trix {
+  float: left;
+  max-width: 100%;
+  width: 100%;
+  .text {
+    @include border-box;
+    float: left;
+    width: auto;
+  }
+  .image {
+    @include border-box;
+    float: left;
+    width: auto;
+  }
+  .video {
+    @include border-box;
+    float: left;
+    width: auto;
+  }
+  .gallery {
+    @include border-box;
+    float: left;
+    width: auto;
+  }
+
+  p,
+  div {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    width: 100%;
+    &.double-extra-small {
+      font-size: 8px;
+      line-height: 16px;
+      img,
+      svg {
+        height: 16px;
+      }
+    }
+    &.extra-small {
+      font-size: 10px;
+      line-height: 18px;
+      img,
+      svg {
+        height: 18px;
+      }
+    }
+    &.small {
+      font-size: 12px;
+      line-height: 20px;
+      img,
+      svg {
+        height: 20px;
+      }
+    }
+    &.medium {
+      font-size: 16px;
+      line-height: 24px;
+      img,
+      svg {
+        height: 24px;
+      }
+    }
+    &.large {
+      font-size: 20px;
+      line-height: 32px;
+      img,
+      svg {
+        height: 32px;
+      }
+    }
+    &.extra-large {
+      font-size: 24px;
+      line-height: 40px;
+      img,
+      svg {
+        height: 40px;
+      }
+    }
+    &.double-extra-large {
+      font-size: 36px;
+      line-height: 48px;
+      img,
+      svg {
+        height: 48px;
+      }
+    }
+    img,
+    svg {
+      display: inline;
+      float: none;
+      height: 24px;
+      margin: 0;
+      max-width: 100%;
+      padding: 0;
+      vertical-align: bottom;
+      width: auto;
+    }
+    a {
+      @include hover-animation(.20s);
+      @include link-default-theme;
+      display: inline-block;
+      float: none;
+      font-size: inherit;
+      line-height: inherit;
+      margin: 0;
+      padding: 0;
+      text-decoration: underline;
+      vertical-align: bottom;
+    }
+  }
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$double-extra-small} {
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$extra-small} {
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$small} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$medium} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$large} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$extra-large} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$double-extra-large} {
+}
