@@ -6,10 +6,18 @@ A Minimal and Lightweight SCSS Toolset.
 
 ### Usage
 
+#### Mies on its own
 Add this line to your application.css
 
 ```
 *= require mies
+```
+
+#### Mies customization
+Copy the folder "custom" into you stylesheets directory and add this line to your application.css.
+
+```
+*= require mies_customizer
 ```
 
 ### Installation

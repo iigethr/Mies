@@ -1,5 +1,5 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:        Mies
+// File:        Mies Customizer
 // Version:     0.0.1.alpha
 // Project:     Mies by IIGETHR
 // Description: A Minimal and Lightweight Design System.
@@ -10,48 +10,38 @@
 
 @charset "UTF-8";
 
-// Vendor
+// 0) Mies
 // ------------------------------------------------------------
-@import "normalize";
+@import "mies";
 
-// Variables
+// 1) Variables
 // ------------------------------------------------------------
-@import "lib/variables/**/*";
+@import "custom/variables/**/*";
 
-// Mixins
+// 2) Mixins
 // ------------------------------------------------------------
-@import "lib/mixins/**/*";
+@import "custom/mixins/**/*";
 
-// Global
+// 3) Global
 // ------------------------------------------------------------
-@import "lib/global/base";
-@import "lib/global/universal";
-@import "lib/global/roles";
-@import "lib/global/forms";
-@import "lib/global/tables";
+@import "custom/global/**/*";
 
-// Boards
+// 4) Boards
 // ------------------------------------------------------------
-@import "lib/boards/**/*";
+@import "custom/boards/**/*";
 
-// Patterns
+// 5) Patterns
 // ------------------------------------------------------------
-@import "lib/patterns/**/*";
+@import "custom/patterns/**/*";
 
-// Components
+// 6) Components
 // ------------------------------------------------------------
-@import "lib/components/**/*";
+@import "custom/components/**/*";
 
-// Columns
+// 7) Columns
 // ------------------------------------------------------------
-@import "lib/columns/col_double_extra_small";
-@import "lib/columns/col_extra_small";
-@import "lib/columns/col_small";
-@import "lib/columns/col_medium";
-@import "lib/columns/col_large";
-@import "lib/columns/col_extra_large";
-@import "lib/columns/col_double_extra_large";
+@import "custom/columns/**/*";
 
-// Overriders
+// 8) Overriders
 // ------------------------------------------------------------
-@import "lib/overriders/**/*";
+@import "custom/overriders/**/*";
