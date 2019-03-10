@@ -18,6 +18,9 @@
   text-transform: uppercase;
   white-space: nowrap;
   width: auto;
+  span {
+    letter-spacing: inherit;
+  }
   // Icon
   .icon {
     &.left {
