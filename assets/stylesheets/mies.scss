@@ -10,19 +10,19 @@
 
 @charset "UTF-8";
 
-// Vendor
+// 0) Vendor
 // ------------------------------------------------------------
 @import "normalize";
 
-// Variables
+// 1) Variables
 // ------------------------------------------------------------
 @import "lib/variables/**/*";
 
-// Mixins
+// 2) Mixins
 // ------------------------------------------------------------
 @import "lib/mixins/**/*";
 
-// Global
+// 3) Global
 // ------------------------------------------------------------
 @import "lib/global/base";
 @import "lib/global/universal";
@@ -30,19 +30,19 @@
 @import "lib/global/forms";
 @import "lib/global/tables";
 
-// Boards
+// 4) Boards
 // ------------------------------------------------------------
 @import "lib/boards/**/*";
 
-// Patterns
+// 5) Patterns
 // ------------------------------------------------------------
 @import "lib/patterns/**/*";
 
-// Components
+// 6) Components
 // ------------------------------------------------------------
 @import "lib/components/**/*";
 
-// Columns
+// 7) Columns
 // ------------------------------------------------------------
 @import "lib/columns/col_double_extra_small";
 @import "lib/columns/col_extra_small";
@@ -52,6 +52,6 @@
 @import "lib/columns/col_extra_large";
 @import "lib/columns/col_double_extra_large";
 
-// Overriders
+// 8) Overriders
 // ------------------------------------------------------------
 @import "lib/overriders/**/*";
