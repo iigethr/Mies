@@ -17,9 +17,10 @@ Gem::Specification.new do |spec|
   spec.files                  = Dir["{assets,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   spec.required_ruby_version  = "~> 2.5"
 
+  # Development
+  spec.add_development_dependency "rails"
   # Production
   spec.add_dependency "autoprefixer-rails", "~> 9.0"
   spec.add_dependency "inline_svg", "~> 1.0"
-  spec.add_dependency "rails", "~> 5.2"
   spec.add_dependency "sassc-rails", "~> 2.0"
 end

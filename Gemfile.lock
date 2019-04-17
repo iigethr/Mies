@@ -4,7 +4,6 @@ PATH
     mies (0.0.1.alpha)
       autoprefixer-rails (~> 9.0)
       inline_svg (~> 1.0)
-      rails (~> 5.2)
       sassc-rails (~> 2.0)
 
 GEM
@@ -216,6 +215,7 @@ DEPENDENCIES
   coffeelint
   haml_lint
   mies!
+  rails (>= 5.2.0)
   reek
   rubocop
   rubocop-performance
