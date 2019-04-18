@@ -18,7 +18,12 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version  = "~> 2.5"
 
   # Development
-  spec.add_development_dependency "rails"
+  spec.add_development_dependency "database_cleaner"
+  spec.add_development_dependency "factory_bot_rails"
+  spec.add_development_dependency "rspec-rails"
+  spec.add_development_dependency "shoulda-matchers"
+  spec.add_development_dependency "sqlite3"
+
   # Production
   spec.add_dependency "autoprefixer-rails", "~> 9.0"
   spec.add_dependency "inline_svg", "~> 1.0"

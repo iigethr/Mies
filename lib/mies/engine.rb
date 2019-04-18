@@ -15,5 +15,10 @@ module Mies
       Rails.application.config.assets.paths << root.join("assets", "stylesheets")
       Rails.application.config.assets.precompile += %w[*.gif *.png *.jpg *.jpeg *.pdf *.svg *.eot *.woff *.ttf]
     end
+
+    # Default generator setup
+    config.generators do |generator|
+      generator.test_framework :rspec
+    end
   end
 end

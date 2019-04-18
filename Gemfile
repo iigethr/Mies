@@ -15,15 +15,25 @@ gemspec
 ruby "2.6.2"
 
 # Rails version
-gem "rails", ">= 5.2.0"
-
-# Declare any dependencies that are still in development here instead of in
-# your gemspec. These might include edge Rails or gems from your path or
-# Git. Remember to move these dependencies to your gemspec before releasing
-# your gem to rubygems.org.
+# gem "rails", ">= 5.2.0"
+gem "rails", "6.0.0.beta3", github: "rails/rails"
 
 # Rack-based asset packaging system.
 gem "sprockets", "~> 4.0.0.beta8"
+# Haml (HTML Abstraction Markup Language) is a layer on top of HTML or XML.
+gem "haml", "~> 5.0"
+gem "haml-rails", "~> 2.0"
+# Use SCSS for stylesheets
+gem "sassc-rails", "~> 2.0"
+
+# A library for generating fake data such as names, addresses, and phone numbers.
+gem "faker", github: "stympy/faker", branch: "master"
+
+group :development, :test do
+  # Continuous Integration
+  gem "codeclimate-test-reporter", "~> 1.0", ">= 1.0.9"
+  gem "travis", "~> 1.8", ">= 1.8.9"
+end
 
 # Linters
 gem "coffeelint", require: false
