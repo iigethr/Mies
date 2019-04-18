@@ -14,22 +14,22 @@ gemspec
 # Ruby version
 ruby "2.6.2"
 
-# Rails version
-# gem "rails", ">= 5.2.0"
-gem "rails", "6.0.0.beta3", github: "rails/rails"
-
-# Rack-based asset packaging system.
-gem "sprockets", "~> 4.0.0.beta8"
-# Haml (HTML Abstraction Markup Language) is a layer on top of HTML or XML.
-gem "haml", "~> 5.0"
-gem "haml-rails", "~> 2.0"
-# Use SCSS for stylesheets
-gem "sassc-rails", "~> 2.0"
-
-# A library for generating fake data such as names, addresses, and phone numbers.
-gem "faker", github: "stympy/faker", branch: "master"
-
 group :development, :test do
+  # Rails version
+  # gem "rails", ">= 5.2.0"
+  gem "rails", "6.0.0.beta3", github: "rails/rails"
+
+  # Rack-based asset packaging system.
+  gem "sprockets", "~> 4.0.0.beta8"
+  # Haml (HTML Abstraction Markup Language) is a layer on top of HTML or XML.
+  gem "haml", "~> 5.0"
+  gem "haml-rails", "~> 2.0"
+  # Use SCSS for stylesheets
+  gem "sassc-rails", "~> 2.0"
+
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem "faker", github: "stympy/faker", branch: "master"
+
   # Continuous Integration
   gem "codeclimate-test-reporter", "~> 1.0", ">= 1.0.9"
   gem "travis", "~> 1.8", ">= 1.8.9"

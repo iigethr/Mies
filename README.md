@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/9a834070d31596442fe3/maintainability)](https://codeclimate.com/github/iigethr/mies/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9a834070d31596442fe3/maintainability)](https://codeclimate.com/github/iigethr/mies/maintainability) [![Build Status](https://travis-ci.org/iigethr/mies.svg?branch=master)](https://travis-ci.org/iigethr/mies)
 
 # Mies
 
