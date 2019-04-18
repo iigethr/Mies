@@ -1,5 +1,15 @@
 # frozen_string_literal: true
 
+# SimpleCov
+# require "simplecov"
+# SimpleCov.start "rails"
+# SimpleCov.start "rails" do
+#   add_filter "/app/controllers/users/"
+#   add_filter "/bin/"
+#   add_filter "/db/"
+#   add_filter "/spec/" # for rspec
+# end
+
 # This file is copied to spec/ when you run "rails generate rspec:install"
 require "spec_helper"
 ENV["RAILS_ENV"] ||= "test"

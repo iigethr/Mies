@@ -347,6 +347,7 @@ DEPENDENCIES
   sassc-rails (~> 2.0)
   scss_lint
   shoulda-matchers
+  simplecov
   sprockets (~> 4.0.0.beta8)
   sqlite3
   travis (~> 1.8, >= 1.8.9)

@@ -14,10 +14,6 @@ gemspec
 # Ruby version
 ruby "2.6.2"
 
-# Code coverage for Ruby 1.9+ with a powerful configuration library
-# and automatic merging of coverage across test suites.
-# gem "simplecov", require: false, group: :test
-
 group :development, :test do
   # Rails version
   # gem "rails", ">= 5.2.0"
@@ -37,6 +33,12 @@ group :development, :test do
   # Continuous Integration
   gem "codeclimate-test-reporter", "~> 1.0", ">= 1.0.9"
   gem "travis", "~> 1.8", ">= 1.8.9"
+end
+
+group :test do
+  # Code coverage for Ruby 1.9+ with a powerful configuration library
+  # and automatic merging of coverage across test suites.
+  gem "simplecov", require: false
 end
 
 # Linters
