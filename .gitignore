@@ -1,6 +1,7 @@
 # Debris
 .DS_Store
 .sass-cache
+Gemfile.lock
 
 # Ignore building resources
 /resources
