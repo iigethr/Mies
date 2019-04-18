@@ -21,7 +21,7 @@ ruby "2.6.2"
 group :development, :test do
   # Rails version
   # gem "rails", ">= 5.2.0"
-  gem "rails", "6.0.0.beta3", github: "rails/rails"
+  # gem "rails", "6.0.0.beta3", github: "rails/rails"
 
   # Rack-based asset packaging system.
   gem "sprockets", "~> 4.0.0.beta8"

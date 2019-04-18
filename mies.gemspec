@@ -20,12 +20,13 @@ Gem::Specification.new do |spec|
   # Development
   spec.add_development_dependency "database_cleaner"
   spec.add_development_dependency "factory_bot_rails"
+  spec.add_development_dependency "rails", [">= 5.2"]
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "shoulda-matchers"
   spec.add_development_dependency "sqlite3"
 
   # Production
-  spec.add_dependency "autoprefixer-rails", "~> 9.0"
-  spec.add_dependency "inline_svg", "~> 1.0"
-  spec.add_dependency "sassc-rails", "~> 2.0"
+  spec.add_dependency "autoprefixer-rails", "~> 9.5"
+  spec.add_dependency "inline_svg", "~> 1.3"
+  spec.add_dependency "sassc-rails", "~> 2.1"
 end
