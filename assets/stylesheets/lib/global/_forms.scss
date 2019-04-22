@@ -207,9 +207,12 @@ form {
     border: 1px solid $gray-200;
     float: left;
     max-width: 100%;
-    min-height: 128px;
+    min-height: 136px;
     padding: 8px;
     width: 100%;
+    textarea {
+      min-height: 120px;
+    }
     trix-editor {
       border: 1px solid $gray-200;
       min-height: 128px;
