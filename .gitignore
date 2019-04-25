@@ -25,7 +25,7 @@ Gemfile.lock
 !/storage/.keep
 /app/assets/builders
 
-/node_modules
+/spec/dummy/node_modules
 /yarn-error.log
 
 /public/uploads

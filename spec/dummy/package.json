@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "altai_off": "^1.1.5",
+    "jquery": "^3.4.0"
+  }
+}

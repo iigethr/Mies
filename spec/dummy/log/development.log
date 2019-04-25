@@ -1463,3 +1463,632 @@ Processing by ButtonsController#index as HTML
 Completed 200 OK in 146ms (Views: 144.1ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-24 11:31:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (13.8ms)
+  Rendered lib/components/_menu.html.haml (6.1ms)
+  Rendered lib/global/_header.html.haml (14.2ms)
+  Rendered lib/global/_main.html.haml (30.4ms)
+  Rendered lib/global/_footer.html.haml (10.1ms)
+Completed 200 OK in 4343ms (Views: 4340.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:31:18 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (62.1ms)
+  Rendered lib/components/_menu.html.haml (5.4ms)
+  Rendered lib/global/_header.html.haml (13.9ms)
+  Rendered lib/global/_main.html.haml (4.9ms)
+  Rendered lib/global/_footer.html.haml (5.8ms)
+Completed 200 OK in 172ms (Views: 166.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:31:21 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.9ms)
+  Rendered lib/components/_menu.html.haml (3.0ms)
+  Rendered lib/global/_header.html.haml (7.6ms)
+  Rendered lib/global/_main.html.haml (3.8ms)
+  Rendered lib/global/_footer.html.haml (2.1ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-24 11:37:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (14.2ms)
+  Rendered lib/components/_menu.html.haml (5.3ms)
+  Rendered lib/global/_header.html.haml (11.5ms)
+  Rendered lib/global/_main.html.haml (4.1ms)
+  Rendered lib/global/_footer.html.haml (4.2ms)
+Completed 200 OK in 563ms (Views: 561.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:38:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007fc8a7072228>:0x00007fc8a74393c0>
+Did you mean?  javascript_path
+               javascript_tag):
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag "application", media: "all"
+     9:     = javascript_pack_tag "application", "data-turbolinks-track": "reload"
+    10:   %body
+    11:     = render partial: "lib/global/header"
+    12:     = render partial: "lib/global/main"
+  
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml___3146131810534391439_70249894579380'
+Started GET "/" for ::1 at 2019-04-24 11:38:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_link_tag' for #<#<Class:0x00007fc8a7072228>:0x00007fc8a76d77d0>
+Did you mean?  javascript_tag):
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag "application", media: "all"
+     9:     = javascript_link_tag "application", "data-turbolinks-track": "reload"
+    10:   %body
+    11:     = render partial: "lib/global/header"
+    12:     = render partial: "lib/global/main"
+  
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml___3146131810534391439_70249889571680'
+Started GET "/" for ::1 at 2019-04-24 11:39:31 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_link' for #<#<Class:0x00007fc8a7072228>:0x00007fc8a464ae50>
+Did you mean?  javascript_url
+               javascript_tag
+               javascript_path):
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag "application", media: "all"
+     9:     = javascript_link "application", "data-turbolinks-track": "reload"
+    10:   %body
+    11:     = render partial: "lib/global/header"
+    12:     = render partial: "lib/global/main"
+  
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml___3146131810534391439_70249864256340'
+Started GET "/" for ::1 at 2019-04-24 11:39:59 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (3.3ms)
+DEPRECATION WARNING: The asset "application.js" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_haml___3146131810534391439_70249887842820 at /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/views/layouts/application.html.haml:9)
+  Rendered lib/components/_menu.html.haml (3.2ms)
+  Rendered lib/global/_header.html.haml (7.8ms)
+  Rendered lib/global/_main.html.haml (3.0ms)
+  Rendered lib/global/_footer.html.haml (3.3ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for ::1 at 2019-04-24 11:40:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for ::1 at 2019-04-24 11:40:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.8ms)
+DEPRECATION WARNING: The asset "application.js" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_haml___3146131810534391439_70249867397440 at /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/views/layouts/application.html.haml:9)
+  Rendered lib/components/_menu.html.haml (8.6ms)
+  Rendered lib/global/_header.html.haml (16.0ms)
+  Rendered lib/global/_main.html.haml (7.6ms)
+  Rendered lib/global/_footer.html.haml (5.7ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for ::1 at 2019-04-24 11:40:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for ::1 at 2019-04-24 11:40:29 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (3.8ms)
+DEPRECATION WARNING: The asset "packs/application.js" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_haml___3146131810534391439_70249867745300 at /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/views/layouts/application.html.haml:9)
+  Rendered lib/components/_menu.html.haml (3.7ms)
+  Rendered lib/global/_header.html.haml (9.7ms)
+  Rendered lib/global/_main.html.haml (2.3ms)
+  Rendered lib/global/_footer.html.haml (2.3ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/packs/application.js" for ::1 at 2019-04-24 11:40:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/packs/application.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for ::1 at 2019-04-24 11:42:39 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (42.3ms)
+DEPRECATION WARNING: The asset "application.js" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_haml___3146131810534391439_70249855336920 at /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/views/layouts/application.html.haml:9)
+  Rendered lib/components/_menu.html.haml (10.1ms)
+  Rendered lib/global/_header.html.haml (56.9ms)
+  Rendered lib/global/_main.html.haml (14.5ms)
+  Rendered lib/global/_footer.html.haml (13.6ms)
+Completed 200 OK in 550ms (Views: 540.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for ::1 at 2019-04-24 11:42:40 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-24 11:43:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (18.1ms)
+Completed 500 Internal Server Error in 4939ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/config
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/images
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/javascripts
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/stylesheets
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/vendor/assets/stylesheets
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/icons
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/images
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/stylesheets):
+     5:     %title Dummy
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag "application", media: "all"
+     9:     = javascript_include_tag "application", "data-turbolinks-track": "reload"
+    10:   %body
+    11:     = render partial: "lib/global/header"
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.haml:8:in `_app_views_layouts_application_html_haml__733995378997295027_70163438056720'
+Started GET "/" for ::1 at 2019-04-24 11:44:01 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery/dist/jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/config
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/images
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/javascripts
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/stylesheets
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/vendor/assets/stylesheets
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/icons
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/images
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/stylesheets):
+     5:     %title Dummy
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag "application", media: "all"
+     9:     = javascript_include_tag "application", "data-turbolinks-track": "reload"
+    10:   %body
+    11:     = render partial: "lib/global/header"
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.haml:8:in `_app_views_layouts_application_html_haml__733995378997295027_70163476444820'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-24 11:45:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (15.0ms)
+  Rendered lib/components/_menu.html.haml (5.3ms)
+  Rendered lib/global/_header.html.haml (16.8ms)
+  Rendered lib/global/_main.html.haml (5.0ms)
+  Rendered lib/global/_footer.html.haml (12.8ms)
+Completed 200 OK in 5503ms (Views: 5501.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:45:20 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered lib/components/_menu.html.haml (9.5ms)
+  Rendered lib/global/_header.html.haml (16.9ms)
+  Rendered lib/global/_main.html.haml (4.5ms)
+  Rendered lib/global/_footer.html.haml (5.8ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:45:41 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (6.9ms)
+  Rendered lib/components/_menu.html.haml (6.6ms)
+  Rendered lib/global/_header.html.haml (22.2ms)
+  Rendered lib/global/_main.html.haml (6.5ms)
+  Rendered lib/global/_footer.html.haml (31.6ms)
+Completed 200 OK in 303ms (Views: 301.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:45:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered lib/components/_menu.html.haml (3.3ms)
+  Rendered lib/global/_header.html.haml (8.6ms)
+  Rendered lib/global/_main.html.haml (2.6ms)
+  Rendered lib/global/_footer.html.haml (2.0ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-24 11:48:50 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (11.7ms)
+  Rendered lib/components/_menu.html.haml (9.2ms)
+  Rendered lib/global/_header.html.haml (19.7ms)
+  Rendered lib/global/_main.html.haml (6.0ms)
+  Rendered lib/global/_footer.html.haml (14.5ms)
+Completed 200 OK in 801ms (Views: 798.9ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-24 11:55:33 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (18.8ms)
+  Rendered lib/components/_menu.html.haml (5.6ms)
+  Rendered lib/global/_header.html.haml (13.3ms)
+  Rendered lib/global/_main.html.haml (4.6ms)
+  Rendered lib/global/_footer.html.haml (4.0ms)
+Completed 200 OK in 1009ms (Views: 1005.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:55:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.6ms)
+  Rendered lib/components/_menu.html.haml (10.0ms)
+  Rendered lib/global/_header.html.haml (15.7ms)
+  Rendered lib/global/_main.html.haml (2.4ms)
+  Rendered lib/global/_footer.html.haml (2.6ms)
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:55:48 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered lib/components/_menu.html.haml (21.9ms)
+  Rendered lib/global/_header.html.haml (45.2ms)
+  Rendered lib/global/_main.html.haml (7.6ms)
+  Rendered lib/global/_footer.html.haml (26.8ms)
+Completed 200 OK in 230ms (Views: 227.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 11:55:51 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (9.7ms)
+  Rendered lib/components/_menu.html.haml (7.5ms)
+  Rendered lib/global/_header.html.haml (11.9ms)
+  Rendered lib/global/_main.html.haml (7.7ms)
+  Rendered lib/global/_footer.html.haml (30.5ms)
+Completed 200 OK in 162ms (Views: 160.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:55:52 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (39.4ms)
+  Rendered lib/components/_menu.html.haml (5.2ms)
+  Rendered lib/global/_header.html.haml (9.0ms)
+  Rendered lib/global/_main.html.haml (2.7ms)
+  Rendered lib/global/_footer.html.haml (2.9ms)
+Completed 200 OK in 102ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:56:13 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (18.0ms)
+  Rendered lib/components/_menu.html.haml (2.9ms)
+  Rendered lib/global/_header.html.haml (6.3ms)
+  Rendered lib/global/_main.html.haml (2.2ms)
+  Rendered lib/global/_footer.html.haml (2.4ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:56:18 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (29.5ms)
+  Rendered lib/components/_menu.html.haml (9.6ms)
+  Rendered lib/global/_header.html.haml (21.1ms)
+  Rendered lib/global/_main.html.haml (19.9ms)
+  Rendered lib/global/_footer.html.haml (10.6ms)
+Completed 200 OK in 134ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:57:09 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (39.8ms)
+  Rendered lib/components/_menu.html.haml (4.1ms)
+  Rendered lib/global/_header.html.haml (9.1ms)
+  Rendered lib/global/_main.html.haml (2.9ms)
+  Rendered lib/global/_footer.html.haml (4.2ms)
+Completed 200 OK in 127ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:57:14 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (14.4ms)
+  Rendered lib/components/_menu.html.haml (4.4ms)
+  Rendered lib/global/_header.html.haml (10.5ms)
+  Rendered lib/global/_main.html.haml (5.2ms)
+  Rendered lib/global/_footer.html.haml (5.0ms)
+Completed 200 OK in 93ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:57:30 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (13.3ms)
+  Rendered lib/components/_menu.html.haml (2.7ms)
+  Rendered lib/global/_header.html.haml (94.2ms)
+  Rendered lib/global/_main.html.haml (3.4ms)
+  Rendered lib/global/_footer.html.haml (4.6ms)
+Completed 200 OK in 164ms (Views: 162.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buttons" for ::1 at 2019-04-24 11:58:03 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'altai_off' with type 'application/javascript'
+Checked in these paths: 
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/config
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/images
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/javascripts
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/app/assets/stylesheets
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/vendor/assets/stylesheets
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /Users/tonydefaria/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/spec/dummy/node_modules
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/icons
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/images
+  /Users/tonydefaria/Box Sync/iigethr/gems/mies/assets/stylesheets):
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag "application", media: "all"
+     9:     = javascript_include_tag "application", "data-turbolinks-track": "reload"
+    10:   %body
+    11:     = render partial: "lib/global/header"
+    12:     = render partial: "lib/global/main"
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml__3396400469362845784_70277699591240'
+Started GET "/buttons" for ::1 at 2019-04-24 11:58:40 +0100
+Processing by ButtonsController#index as HTML
+  Rendering buttons/index.html.haml within layouts/application
+  Rendered buttons/index.html.haml within layouts/application (17.8ms)
+  Rendered lib/components/_menu.html.haml (6.0ms)
+  Rendered lib/global/_header.html.haml (14.3ms)
+  Rendered lib/global/_main.html.haml (53.9ms)
+  Rendered lib/global/_footer.html.haml (2.3ms)
+Completed 200 OK in 256ms (Views: 254.0ms | ActiveRecord: 0.0ms)
+
+

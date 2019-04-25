@@ -12,4 +12,11 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require_tree .
+//= require jquery
+//= require altai_off/dist/altai_off
+
+
+
+$(document).ready(function() {
+  console.log( "ready!" );
+});
