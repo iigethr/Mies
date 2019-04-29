@@ -4,11 +4,11 @@
 // -------------------------------------------------------------
 
 .button {
-  @include border-corner(3px);
+  @include border-corner(.25em);
   @include button-default-theme;
   @include button-medium-size;
   appearance: none;
-  border: 1px solid;
+  // border: 1px solid;
   display: block;
   float: left;
   font-weight: 700;
@@ -24,10 +24,10 @@
   // Icon
   .icon {
     &.left {
-      margin-right: .75em;
+      margin-right: .5em;
     }
     &.right {
-      margin-left: .75em;
+      margin-left: .5em;
     }
   }
   &.no-bg {

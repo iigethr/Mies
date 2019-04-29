@@ -4,79 +4,72 @@
 // -------------------------------------------------------------
 
 @mixin button-double-extra-small-size {
-  font-size: 8px;
-  line-height: 8px;
-  min-height: 16px;
-  padding: 3px;
+  font-size: 6px;
+  line-height: 12px;
+  padding: 0 3px;
   .icon {
-    height: 8px;
-    top: 0;
+    height: 6px;
+    top: 3px;
   }
 }
 
 @mixin button-extra-small-size {
   font-size: 8px;
-  line-height: 10px;
-  min-height: 18px;
-  padding: 3px 3px;
+  line-height: 16px;
+  padding: 0 4px;
   .icon {
-    height: 10px;
-    top: 0;
+    height: 8px;
+    top: 4px;
   }
 }
 
 @mixin button-small-size {
-  font-size: 10px;
-  line-height: 12px;
-  min-height: 20px;
-  padding: 3px 3px;
+  font-size: 8px;
+  line-height: 20px;
+  padding: 0 5px;
   .icon {
-    height: 12px;
-    top: 0;
+    height: 10px;
+    top: 5px;
   }
 }
 
 @mixin button-medium-size {
   font-size: 10px;
-  line-height: 14px;
-  min-height: 24px;
-  padding: 4px 4px;
+  line-height: 24px;
+  padding: 0 6px;
   .icon {
-    height: 14px;
-    top: 0;
+    height: 12px;
+    top: 6px;
   }
 }
 
 @mixin button-large-size {
-  font-size: 12px;
-  line-height: 18px;
-  min-height: 32px;
-  padding: 6px 6px;
+  font-size: 10px;
+  line-height: 32px;
+  padding: 0 8px;
   .icon {
-    height: 18px;
-    top: 0;
+    height: 16px;
+    top: 8px;
   }
 }
 
 @mixin button-extra-large-size {
   font-size: 12px;
-  line-height: 20px;
-  min-height: 40px;
-  padding: 9px 9px;
+  line-height: 40px;
+  padding: 0 10px;
   .icon {
     height: 20px;
-    top: 0;
+    top: 10px;
   }
 }
 
 @mixin button-double-extra-large-size {
-  font-size: 12px;
-  line-height: 24px;
-  min-height: 48px;
-  padding: 12px 12px 10px;
+  font-size: 14px;
+  line-height: 48px;
+  padding: 0 12px;
   .icon {
     height: 24px;
-    top: -1px;
+    top: 12px;
   }
 }
 
