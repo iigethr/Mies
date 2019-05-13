@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/stympy/faker.git
-  revision: 59a92644d5583828add1c68351074f6e52c6deb6
+  revision: ed382d11a58311f1701f82bbe18f3b4fb7636e27
   branch: master
   specs:
     faker (1.9.3)
@@ -67,7 +67,7 @@ GEM
     addressable (2.4.0)
     arel (9.0.0)
     ast (2.4.0)
-    autoprefixer-rails (9.5.1)
+    autoprefixer-rails (9.5.1.1)
       execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -131,7 +131,7 @@ GEM
       haml (>= 4.0.6, < 6.0)
       html2haml (>= 1.0.1)
       railties (>= 5.1)
-    haml_lint (0.28.0)
+    haml_lint (0.30.0)
       haml (>= 4.0, < 5.1)
       rainbow
       rake (>= 10, < 13)
@@ -167,7 +167,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    multipart-post (2.0.0)
+    multipart-post (2.1.0)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
     nio4r (2.3.1)
@@ -238,16 +238,15 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rubocop (0.67.2)
+    rubocop (0.68.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5, != 2.5.1.1)
-      psych (>= 3.1.0)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.6)
-    rubocop-performance (1.1.0)
-      rubocop (>= 0.67.0)
+    rubocop-performance (1.2.0)
+      rubocop (>= 0.68.0)
     ruby-progressbar (1.10.0)
     ruby_parser (3.13.1)
       sexp_processor (~> 4.9)
@@ -265,7 +264,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    scss_lint (0.57.1)
+    scss_lint (0.58.0)
       rake (>= 0.9, < 13)
       sass (~> 3.5, >= 3.5.5)
     sexp_processor (4.12.0)
@@ -283,7 +282,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.0)
+    sqlite3 (1.4.1)
     strings (0.1.5)
       strings-ansi (~> 0.1)
       unicode-display_width (~> 1.5)
@@ -294,7 +293,7 @@ GEM
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
-    travis (1.8.9)
+    travis (1.8.10)
       backports
       faraday (~> 0.9)
       faraday_middleware (~> 0.9, >= 0.9.1)
