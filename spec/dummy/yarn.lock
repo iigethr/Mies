@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+altai_center@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/altai_center/-/altai_center-0.0.6.tgz#7590d3a14effea192f3a4b7b204e1126d21bd60b"
+  integrity sha512-6SoHu1NhyYdv7xtyMtpua+F/5JCGPZ+oMbr9JPHfvQ1X+pipvT4uswEIHuQuldQJUSH5EXq89grkTp509UGwhw==
+  dependencies:
+    jquery "^3.0"
+
 altai_off@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/altai_off/-/altai_off-1.1.5.tgz#e111197e3d2f5ad42cf996f8acc5a8c90ecc4bbe"

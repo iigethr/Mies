@@ -1,9 +1,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Blankslate
+// File:    Forefront
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
-$class: "blankslate";
+$class: "forefront";
 
 .#{$class} {
   @include border-box;
@@ -14,12 +14,14 @@ $class: "blankslate";
   .#{$class}-box {
     @include border-box;
     @include border-corner(4px);
+    background-color: $blue-000;
+    border: 1px solid $blue-100;
     float: left;
     width: 100%;
     .#{$class}-item {
       @include border-box;
       float: left;
-      padding: 32px;
+      padding: 30px;
       width: 100%;
       .#{$class}-inner {
         @include border-box;
@@ -54,12 +56,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -71,12 +67,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -99,12 +89,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -116,12 +100,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -133,12 +111,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -150,12 +122,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }

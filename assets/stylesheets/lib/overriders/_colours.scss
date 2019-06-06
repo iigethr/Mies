@@ -200,3 +200,25 @@
 .red-700-cl { color: $red-700 !important; }
 .red-800-cl { color: $red-800 !important; }
 .red-900-cl { color: $red-900 !important; }
+
+// Notifications & Errors
+// -------------------------------------------------------------
+.error {
+  background-color: $red !important;
+  color: $red-000 !important;
+}
+
+.alert {
+  background-color: $yellow !important;
+  color: $yellow-000 !important;
+}
+
+.notice {
+  background-color: $blue !important;
+  color: $blue-000 !important;
+}
+
+.success {
+  background-color: $green !important;
+  color: $green-000 !important;
+}

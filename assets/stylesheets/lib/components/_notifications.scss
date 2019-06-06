@@ -1,48 +1,33 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Blankslate
+// File:    Notifications
 // Project: Mies by IIGETHR
 // -------------------------------------------------------------
 
-$class: "blankslate";
+$class: "notifications";
 
 .#{$class} {
   @include border-box;
-  color: $blue-500;
+  color: $green-500;
   float: left;
   padding: 8px;
   width: 100%;
   .#{$class}-box {
     @include border-box;
     @include border-corner(4px);
+    background-color: $green-000;
+    border: 1px solid $green-100;
     float: left;
     width: 100%;
     .#{$class}-item {
       @include border-box;
       float: left;
-      padding: 32px;
+      padding: 30px;
       width: 100%;
-      .#{$class}-inner {
-        @include border-box;
-        float: left;
-        width: 100%;
-        .#{$class}-inner-box {
-          @include border-box;
-          float: left;
-          .#{$class}-inner-item {
-            @include border-box;
-            float: left;
-            padding: 0 4px;
-          }
-        }
-      }
       h3 {
-        color: $blue-700;
+        color: $green-700;
       }
       p {
-        color: $blue-500;
-        &.small {
-          color: $blue-700;
-        }
+        color: $green-500;
       }
     }
   }
@@ -54,12 +39,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -71,12 +50,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -99,12 +72,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -116,12 +83,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -133,12 +94,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }
@@ -150,12 +105,6 @@ $class: "blankslate";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        .#{$class}-inner {
-          .#{$class}-inner-box {
-            .#{$class}-inner-item {
-            }
-          }
-        }
       }
     }
   }

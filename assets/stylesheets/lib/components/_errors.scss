@@ -7,17 +7,21 @@ $class: "errors";
 
 .#{$class} {
   @include border-box;
+  float: left;
+  width: 100%;
   .#{$class}-box {
     @include border-box;
     @include clear-list;
+    float: left;
     padding: 4px;
+    width: 100%;
     .#{$class}-item {
       @include border-box;
+      float: left;
       padding: 4px;
+      width: 100%;
       p {
-        @include border-corner(3px);
-        background-color: $red;
-        color: $red-000;
+        @include border-corner(4px);
         padding: 8px;
       }
     }
